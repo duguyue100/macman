@@ -25,6 +25,7 @@ COMMANDS=(
     clock
     battery
     fd.size
+    fd.hid
     hid.on
     hid.off
     bt.stat

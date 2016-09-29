@@ -47,6 +47,10 @@ case "$fn" in
         du -sh .
     ;;
 
+    "fd.hid")
+        ls -a|grep "^\."
+    ;;
+
     "hid.on")
          defaults write com.apple.finder AppleShowAllFiles YES; killall Finder
     ;;
