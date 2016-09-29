@@ -92,7 +92,7 @@ case "$fn" in
         networksetup -setairportpower ${_W_DEVICE} off
     ;;
 
-    "wifi:pass")
+    "wifi.pass")
         if [ -z "$1" ]
             then
                 ssid="`/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -I | awk '/ SSID/ {print substr($0, index($0, $2))}'`"

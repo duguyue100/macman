@@ -37,6 +37,7 @@ COMMANDS=(
     wifi.off
     wifi.pass
     ejectall
+    g.log
 )
 
 if [ -z "$fn" ]; then
@@ -56,3 +57,4 @@ fi
 # Linking plugins
 "$MAC/tools/help.sh"
 "$MAC/tools/general.sh"
+"$MAC/tools/git.sh"
