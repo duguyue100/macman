@@ -34,7 +34,7 @@ Shutdown your machine
 mac shutdown
 ```
 
-## Available functions - 45 and counting...
+## Available functions - 53 and counting...
 
 ```
 Mac OS X Terminal Tools
@@ -87,7 +87,17 @@ mac g.rm.bh    : Remove a local branch
 mac g.rm.re.bh : Remove a branch from local and remote
 --------------------------------------------------------------
 Functors - extra tools
-mac pdf.html   : convert a PDF to HTML via pdf2htmlEX
+mac pdf.html   : Convert a PDF to HTML via pdf2htmlEX
+mac wttr       : Show the weather for a city.
+mac top10      : Show the top10 used shell commands.
+--------------------------------------------------------------
+Compressor
+mac lszip      : List file in a ZIP archive.
+mac zip        : Zip a file or folder.
+mac unzip      : Unzip a file or folder.
+mac lstar      : List file in a tar archive.
+mac tar        : Tar a file or folder.
+mac untar      : Untar a file or folder.
 ==============================================================
 ```
 
