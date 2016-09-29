@@ -43,7 +43,7 @@ COMMANDS=(
     wifi.pass
     ejectall
     g.log
-    g.status
+    g.stat
     g.open
     g.size
     g.add
