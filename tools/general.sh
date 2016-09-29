@@ -33,7 +33,7 @@ case "$fn" in
 
     # if you have fast-cli package from npm
     "speed")
-        fast
+        $HOME/node_modules/.bin/fast
     ;;
 
     # list of used ports
