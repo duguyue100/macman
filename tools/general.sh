@@ -41,50 +41,50 @@ case "$fn" in
         pmset -g batt
     ;;
 
-    "folder:size")
+    "fd.size")
         echo "Calculating folder size..."
         echo "Folder size:"
         du -sh .
     ;;
 
-    "hid:show")
+    "hid.show")
          defaults write com.apple.finder AppleShowAllFiles YES; killall Finder
     ;;
 
-    "hid:hide")
+    "hid.hide")
         defaults write com.apple.finder AppleShowAllFiles NO; killall Finder
     ;;
 
-    "bt:status")
+    "bt.stat")
         defaults read /Library/Preferences/com.apple.Bluetooth ControllerPowerState | \
             awk '{ if($1 != 0) {print "Bluetooth: ON"} else { print "Bluetooth: OFF" }  }'
     ;;
 
-    "bt:on")
+    "bt.on")
         echo "${GREEN}Bluetooth enabled{NC}"
         sudo defaults write /Library/Preferences/com.apple.Bluetooth ControllerPowerState -int 1 && \
             sudo killall -HUP blued
     ;;
 
-    "bt:off")
+    "bt.off")
         echo "${GREEN}Bluetooth disabled${NC}"
         sudo defaults write /Library/Preferences/com.apple.Bluetooth ControllerPowerState -int 0 && \
             sudo killall -HUP blued
     ;;
 
-    "wifi:status")
+    "wifi.stat")
         /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -I
     ;;
 
-    "wifi:scan")
+    "wifi.scan")
         /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -s
     ;;
 
-    "wifi:on")
+    "wifi.on")
         networksetup -setairportpower ${_W_DEVICE} on
     ;;
 
-    "wifi:off")
+    "wifi.off")
         networksetup -setairportpower ${_W_DEVICE} off
     ;;
 

@@ -24,17 +24,17 @@ COMMANDS=(
     uptime
     clock
     battery
-    folder:size
-    hid:show
-    hid:hide
-    bt:status
-    bt:on
-    bt:off
-    wifi:status
-    wifi:scan
-    wifi:on
-    wifi:off
-    wifi:pass
+    fd.size
+    hid.show
+    hid.hide
+    bt.stat
+    bt.on
+    bt.off
+    wifi.stat
+    wifi.scan
+    wifi.on
+    wifi.off
+    wifi.pass
     ejectall
 )
 
