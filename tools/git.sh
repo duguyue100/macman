@@ -4,7 +4,7 @@
 
 case "$fn" in
     "g.log")
-        git log --pretty=oneline
+        git log --oneline | nl -v0 | sed 's/^ \+/&HEAD~/'
     ;;
 
     "g.stat")

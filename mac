@@ -61,6 +61,13 @@ COMMANDS=(
     g.rm.re.bh
     pdf.html
     wttr
+    top10
+    lszip
+    unzip
+    zip
+    lstar
+    untar
+    tar
 )
 
 if [ -z "$fn" ]; then
@@ -82,3 +89,4 @@ fi
 "$MAC/tools/general.sh"
 "$MAC/tools/git.sh"
 "$MAC/tools/functors.sh"
+"$MAC/tools/compressor.sh"

@@ -21,4 +21,12 @@ case "$fn" in
         fi
     ;;
 
+    ## print top10 used commands
+    "top10")
+        echo "Top10 Used Commands"
+        HISTFILE=$HOME/.bash_history
+        set -o history
+        history | awk '{print $2}' | awk 'BEGIN {FS="|"}{print $1}' | sort | uniq -c | sort -nr | head
+    ;;
+
 esac
