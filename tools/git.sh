@@ -29,40 +29,48 @@ case "$fn" in
         else
             echo "Please specify a valid remote address"
         fi
+    ;;
 
     "g.conf")
         git config --list
+    ;;
+
     # undo commit
     "g.undo")
         git reset --soft HEAD~
+    ;;
 
     # create branch
-    "g.th.branch")
+    "g.th.bh")
         if [ ! -z "$firstParameter" -a "$firstParameter" != " " ]; then
             git checkout -b $firstParameter
         else
             echo "Please specify the name of the branch"
         fi
+    ;;
 
     # list branch
-    "g.ls.branch")
+    "g.ls.bh")
         git branch -a
+    ;;
 
     # remove local branch
-    "g.rm.branch")
+    "g.rm.bh")
         if [ ! -z "$firstParameter" -a "$firstParameter" != " " ]; then
              git branch -d $firstParameter
         else
             echo "Please specify the name of the branch you want to remove"
         fi
+    ;;
 
     # remove local and remote branch
-    "g.rm.branch.remote")
+    "g.rm.re.bh")
         if [ ! -z "$firstParameter" -a "$firstParameter" != " " ]; then
             git branch -d $firstParameter
             git push origin --delete $firstParameter
         else
             echo "Please specify the name of the branch you want to remove from local and remote"
         fi
+    ;;
 
 esac

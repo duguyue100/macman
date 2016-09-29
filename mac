@@ -38,6 +38,16 @@ COMMANDS=(
     wifi.pass
     ejectall
     g.log
+    g.status
+    g.open
+    g.size
+    g.add
+    g.conf
+    g.undo
+    g.th.bh
+    g.ls.bh
+    g.rm.bh
+    g.rm.re.bh
 )
 
 if [ -z "$fn" ]; then
