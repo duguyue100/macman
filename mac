@@ -1,0 +1,57 @@
+#!/bin/sh
+
+MAC="$(dirname "$0")"
+
+
+# catch and export parameters
+fn=$1
+firstParameter=$2
+secondParameter=$3
+allParameters=${@:2}
+
+export fn
+export firstParameter
+export secondParameter
+export allParameters
+
+COMMANDS=(
+    list
+    info
+    lock
+    restart
+    sleep
+    shutdown
+    uptime
+    clock
+    battery
+    folder:size
+    hid:show
+    hid:hide
+    bt:status
+    bt:on
+    bt:off
+    wifi:status
+    wifi:scan
+    wifi:on
+    wifi:off
+    wifi:pass
+    ejectall
+)
+
+if [ -z "$fn" ]; then
+    fn="list"
+fi
+
+if [[ ! " ${COMMANDS[@]} " =~ " ${fn} " ]]; then
+    echo "${RED}Command not found: ${NC}"
+    echo "$fn"
+
+    if [ ! -z "$allParameters" -a "$allParameters" != " " ]; then
+        echo "${RED}\nParameters: ${NC}"
+        echo "$allParameters"
+    fi
+fi
+
+# Linking plugins
+"$MAC/tools/help.sh"
+"$MAC/tools/general.sh"
