@@ -27,6 +27,34 @@ case "$fn" in
         uptime
     ;;
 
+    "mem")
+        top -o MEM
+    ;;
+
+    # if you have fast-cli package from npm
+    "speed")
+        fast
+    ;;
+
+    # list of used ports
+    "ports")
+        echo "Getting list of used ports..."
+        sudo lsof -iTCP -sTCP:LISTEN -P
+    ;;
+
+    "ip.loc")
+        local_ip=$(ipconfig getifaddr en0)
+        if [ $? != 0 ]; then
+            local_ip=$(ipconfig getifaddr en1)
+        fi
+
+        echo "Your local IP address is: ${local_ip}"
+    ;;
+
+    "ip.pub")
+        echo "Your public IP address is: $(wget http://ipinfo.io/ip -qO -)"
+    ;;
+
     # show the clock at the top right of the terminal
     "clock")
         if [ -z "$(pgrep macClock)"   ]; then

@@ -22,6 +22,11 @@ COMMANDS=(
     sleep
     shutdown
     uptime
+    mem
+    speed
+    ports
+    ip.loc
+    ip.pub
     clock
     battery
     fd.size
