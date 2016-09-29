@@ -52,6 +52,7 @@ case "$fn" in
         echo "mac g.rm.re.bh : Remove a branch from local and remote"
         echo "--------------------------------------------------------------"
         echo "Functors - extra tools"
-        echo "mac pdf.html   : convert a PDF to HTML via pdf2htmlEX"
+        echo "mac pdf.html   : Convert a PDF to HTML via pdf2htmlEX"
+        echo "mac wttr       : Show the weather for a city."
         echo "=============================================================="
 esac

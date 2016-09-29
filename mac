@@ -60,6 +60,7 @@ COMMANDS=(
     g.rm.bh
     g.rm.re.bh
     pdf.html
+    wttr
 )
 
 if [ -z "$fn" ]; then

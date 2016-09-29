@@ -11,4 +11,14 @@ case "$fn" in
             echo "Please specify a valid PDF file"
         fi
     ;;
+
+    # weather from command line
+    "wttr")
+        if [ ! -z "$firstParameter" -a "$firstParameter" != " " ]; then
+            curl wttr\.in/$firstParameter
+        else
+            curl wttr\.in
+        fi
+    ;;
+
 esac
