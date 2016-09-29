@@ -45,6 +45,9 @@ COMMANDS=(
     g.conf
     g.undo
     g.th.bh
+    g.th.re.bh
+    g.co.bh
+    g.co.re.bh
     g.ls.bh
     g.rm.bh
     g.rm.re.bh

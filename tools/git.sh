@@ -49,6 +49,32 @@ case "$fn" in
         fi
     ;;
 
+    # clone remote branch to local
+    "g.th.re.bh")
+        if [ ! -z "$firstParameter" -a "$firstParameter" != " " ]; then
+            git checkout -b $firstParameter origin/$firstParameter
+        else
+            echo "Please specify the name of the remote branch you want to clone"
+        fi
+    ;;
+
+    # check out remote branch
+    "g.co.re.bh")
+        if [ ! -z "$firstParameter" -a "$firstParameter" != " " ]; then
+            git checkout origin/$firstParameter
+        else
+            echo "Please specify the name of the remote branch you want to check out."
+        fi
+    ;;
+
+    "g.co.bh")
+        if [ ! -z "$firstParameter" -a "$firstParameter" != " " ]; then
+            git checkout $firstParameter
+        else
+            echo "Please specify a valid name of the branch you want to checkout"
+        fi
+    ;;
+
     # list branch
     "g.ls.bh")
         git branch -a
