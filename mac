@@ -62,6 +62,7 @@ COMMANDS=(
     pdf.html
     wttr
     top10
+    starwar
     lszip
     unzip
     zip

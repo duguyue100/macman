@@ -55,6 +55,7 @@ case "$fn" in
         echo "mac pdf.html   : Convert a PDF to HTML via pdf2htmlEX"
         echo "mac wttr       : Show the weather for a city."
         echo "mac top10      : Show the top10 used shell commands."
+        echo "mac starwar    ; Text based Starwar IV"
         echo "--------------------------------------------------------------"
         echo "Compressor"
         echo "mac lszip      : List file in a ZIP archive."
