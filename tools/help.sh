@@ -40,6 +40,9 @@ case "$fn" in
         echo "mac g.add      : Add an push/pull origin"
         echo "mac g.conf     : List the git configuration"
         echo "mac g.undo     : Undo last commit"
+        echo "mac g.push     : Push to current branch"
+        echo "mac g.pull     : Pull to current branch"
+        echo "mac g.merge    : Merge a specific branch"
         echo "mac g.th.bh    : Touch (create) a new branch"
         echo "mac g.th.re.bh : Touch (clone) a remote branch"
         echo "mac g.co.bh    : Checkout a existing branch"
@@ -47,5 +50,8 @@ case "$fn" in
         echo "mac g.ls.bh    : List all the branch"
         echo "mac g.rm.bh    : Remove a local branch"
         echo "mac g.rm.re.bh : Remove a branch from local and remote"
+        echo "--------------------------------------------------------------"
+        echo "Functors - extra tools"
+        echo "mac pdf.html   : convert a PDF to HTML via pdf2htmlEX"
         echo "=============================================================="
 esac

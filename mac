@@ -49,6 +49,9 @@ COMMANDS=(
     g.add
     g.conf
     g.undo
+    g.push
+    g.pull
+    g.merge
     g.th.bh
     g.th.re.bh
     g.co.bh
@@ -56,6 +59,7 @@ COMMANDS=(
     g.ls.bh
     g.rm.bh
     g.rm.re.bh
+    pdf.html
 )
 
 if [ -z "$fn" ]; then
@@ -76,3 +80,4 @@ fi
 "$MAC/tools/help.sh"
 "$MAC/tools/general.sh"
 "$MAC/tools/git.sh"
+"$MAC/tools/functors.sh"

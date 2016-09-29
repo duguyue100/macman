@@ -40,6 +40,24 @@ case "$fn" in
         git reset --soft HEAD~
     ;;
 
+    "g.push")
+        curr_bh=`git rev-parse --abbrev-ref HEAD`
+        git push origin ${curr_bh}
+    ;;
+
+    "g.pull")
+        curr_bh=`git rev-parse --abbrev-ref HEAD`
+        git pull origin ${curr_bh}
+    ;;
+
+    "g.merge")
+        if [ ! -z "$firstParameter" -a "$firstParameter" != " " ]; then
+            git merge $firstParameter
+        else
+            echo "Please specify the name of the branch you want to merge"
+        fi
+    ;;
+
     # create branch
     "g.th.bh")
         if [ ! -z "$firstParameter" -a "$firstParameter" != " " ]; then

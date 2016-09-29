@@ -34,7 +34,7 @@ Shutdown your machine
 mac shutdown
 ```
 
-## Available functions
+## Available functions - 45 and counting...
 
 ```
 Mac OS X Terminal Tools
@@ -75,6 +75,9 @@ mac g.size     : Calculate the size of Git Repo
 mac g.add      : Add an push/pull origin
 mac g.conf     : List the git configuration
 mac g.undo     : Undo last commit
+mac g.push     : Push to current branch
+mac g.pull     : Pull to current branch
+mac g.merge    : Merge a specific branch
 mac g.th.bh    : Touch (create) a new branch
 mac g.th.re.bh : Touch (clone) a remote branch
 mac g.co.bh    : Checkout a existing branch
@@ -82,6 +85,9 @@ mac g.co.re.bh : Checkout a remote branch
 mac g.ls.bh    : List all the branch
 mac g.rm.bh    : Remove a local branch
 mac g.rm.re.bh : Remove a branch from local and remote
+--------------------------------------------------------------
+Functors - extra tools
+mac pdf.html   : convert a PDF to HTML via pdf2htmlEX
 ==============================================================
 ```
 
