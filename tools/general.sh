@@ -47,11 +47,11 @@ case "$fn" in
         du -sh .
     ;;
 
-    "hid.show")
+    "hid.on")
          defaults write com.apple.finder AppleShowAllFiles YES; killall Finder
     ;;
 
-    "hid.hide")
+    "hid.off")
         defaults write com.apple.finder AppleShowAllFiles NO; killall Finder
     ;;
 
