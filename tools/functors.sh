@@ -33,4 +33,26 @@ case "$fn" in
         telnet towel.blinkenlights.nl
     ;;
 
+    # The Google Calendar functions needs gcalcli
+    "cal")
+        gcalcli agenda
+    ;;
+
+    "cal.week")
+        gcalcli calw
+    ;;
+
+    "cal.mon")
+        gcalcli calm
+    ;;
+
+    "cal.add")
+        if [ ! -z "$firstParameter" -a "$firstParameter" != " " ]; then
+            gcalcli quick "$firstParameter"
+        else
+            echo "Please specify a valid reminder entry"
+            echo "e.g. 16:42 this is a message."
+        fi
+    ;;
+
 esac

@@ -63,6 +63,10 @@ COMMANDS=(
     wttr
     top10
     starwar
+    cal
+    cal.week
+    cal.mon
+    cal.add
     lszip
     unzip
     zip
