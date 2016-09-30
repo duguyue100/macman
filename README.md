@@ -34,7 +34,7 @@ Shutdown your machine
 mac shutdown
 ```
 
-## Available functions - 53 and counting...
+## Available Functions - 57 and counting...
 
 ```
 Mac OS X Terminal Tools
@@ -90,6 +90,11 @@ Functors - extra tools
 mac pdf.html   : Convert a PDF to HTML via pdf2htmlEX
 mac wttr       : Show the weather for a city.
 mac top10      : Show the top10 used shell commands.
+mac starwar    : Text based Starwar IV
+mac cal        : Get 5 days agenda
+mac cal.week   : Get this week's detail calendar
+mac cal.mon    : Get this month's detail calendar
+mac cal.add    : Add a quick event
 --------------------------------------------------------------
 Compressor
 mac lszip      : List file in a ZIP archive.
@@ -99,6 +104,38 @@ mac lstar      : List file in a tar archive.
 mac tar        : Tar a file or folder.
 mac untar      : Untar a file or folder.
 ==============================================================
+```
+
+## Tools for Extra Functions
+
+### Network speed test
+
+This function is provided by `npm`'s `fast-cli` package, can be installed by
+
+```
+npm install fast-cli
+```
+
+### Git related
+
+One could install Git from popular packaging management systems or visit [Git-website](https://git-scm.com/).
+
+### PDF2HTML
+
+`pdf2htmlEX` is one awesome tool for converting from PDF to HTML
+
+### Google Calendar
+
+You can install [Google Calendar Commandline tool](https://github.com/insanum/gcalcli) by
+
+```
+pip install gcalcli
+```
+
+and then install optional package by
+
+```
+pip install vobject parsedatetime
 ```
 
 ## Contacts
