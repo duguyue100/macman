@@ -199,7 +199,7 @@ case "$fn" in
 
     "g.lfs.tk")
         if [ ! -z "$firstParameter" -a "$firstParameter" != " " ]; then
-            git lfs track $firstParameter
+            git lfs track "$firstParameter"
         else
             echo "Please specify the files you want to track"
         fi
@@ -207,7 +207,7 @@ case "$fn" in
 
     "g.lfs.untk")
         if [ ! -z "$firstParameter" -a "$firstParameter" != " " ]; then
-            git lfs untrack $firstParameter
+            git lfs untrack "$firstParameter"
         else
             echo "Please specify the files you want to untrack"
         fi
