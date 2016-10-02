@@ -46,9 +46,18 @@ COMMANDS=(
     g.stat
     g.open
     g.size
-    g.add
+    g.re
     g.conf
     g.undo
+    g.add
+    g.add.all
+    g.commit
+    g.ac
+    g.aca
+    g.acp
+    g.acap
+    g.mv
+    g.rm
     g.push
     g.pull
     g.merge

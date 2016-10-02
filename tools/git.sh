@@ -23,7 +23,7 @@ case "$fn" in
     ;;
 
     # add remote origin
-    "g.add")
+    "g.re")
         if [ ! -z "$firstParameter" -a "$firstParameter" != " " ]; then
             git remote add origin $firstParameter
         else
@@ -38,6 +38,74 @@ case "$fn" in
     # undo commit
     "g.undo")
         git reset --soft HEAD~
+    ;;
+
+    "g.add")
+        git add "$allParameters"
+    ;;
+
+    "g.add.all")
+        git add -A
+    ;;
+
+    "g.commit")
+        git commit -m "$firstParameter" -q
+    ;;
+
+    "g.ac")
+        if [ ! -z "$firstParameter" -a "$firstParameter" != " " ]; then
+            git add "$firstParameter"
+        else
+            echo "Please give a valid file name."
+        fi
+        if [ ! -z "$secondParameter" -a "$secondParameter" != " " ]; then
+            git commit -m "$secondParameter"
+        else
+            echo "Please give a valid commit message"
+        fi
+    ;;
+
+    "g.aca")
+        git add -A
+        if [ ! -z "$firstParameter" -a "$firstParameter" != " " ]; then
+            git commit -m "$firstParameter" -q
+        else
+            echo "Please give a valid commit message"
+        fi
+    ;;
+
+    "g.acp")
+        if [ ! -z "$firstParameter" -a "$firstParameter" != " " ]; then
+            git add "$firstParameter"
+        else
+            echo "Please give a valid file name."
+        fi
+        if [ ! -z "$secondParameter" -a "$secondParameter" != " " ]; then
+            git commit -m "$secondParameter"
+        else
+            echo "Please give a valid commit message"
+        fi
+        curr_bh=`git rev-parse --abbrev-ref HEAD`
+        git push origin ${curr_bh}
+    ;;
+
+    "g.acap")
+        git add -A
+        if [ ! -z "$firstParameter" -a "$firstParameter" != " " ]; then
+            git commit -m "$firstParameter" -q
+        else
+            echo "Please give a valid commit message"
+        fi
+        curr_bh=`git rev-parse --abbrev-ref HEAD`
+        git push origin ${curr_bh}
+    ;;
+
+    "g.mv")
+        git mv "$allParameters"
+    ;;
+
+    "g.rm")
+        git rm "$allParameters"
     ;;
 
     "g.push")

@@ -34,47 +34,56 @@ Shutdown your machine
 mac shutdown
 ```
 
-## Available Functions - 57 and counting...
+## Available Functions - 66 and counting...
 
 ```
 Mac OS X Terminal Tools
 ==============================================================
-mac list/help : List all the available commands.
-mac info      : Get OS X version information
-mac lock      : Lock your mac
-mac restart   : Restart your mac
-mac shutdown  : Shutdown your mac
-mac uptime    : Get the time since last restart
-mac mem       : Get the memory status
-mac speed     : Network speed test (with npm's fast-cli package)
-mac ports     : List all used ports
-mac ip.loc    : Get Local IP address
-mac ip.pub    : Get Public IP address
-mac sleep     : Put your mac into sleep mode
-mac clock     : Show a clock at the top right of your terminal
-mac battery   : Show battery status
-mac fd.size   : Show the folder size.
-mac fd.hid    : List only hidden files in the folder.
-mac hid.on    : Show hidden folders in Finder
-mac hid.off   : Hide hidden dolfers in Finder
-mac bt.stat   : Show the bluetooth status
-mac bt.on     : Turn the bluetooth ON
-mac bt.off    : Turn the bluetooth OFF
-mac wifi.stat : Show the status of WiFi
-mac wifi.scan : Scan available WiFI
-mac wifi.on   : Turn your WiFi service ON
-mac wifi.off  : Turn your WIFI service OFF
-mac wifi.pass : Get WiFi password
-mac ejectall  : Eject all mounted volumes
+mac list/help  : List all the available commands.
+mac info       : Get OS X version information
+mac lock       : Lock your mac
+mac restart    : Restart your mac
+mac shutdown   : Shutdown your mac
+mac uptime     : Get the time since last restart
+mac mem        : Get the memory status
+mac speed      : Network speed test (with npm's fast-cli package)
+mac ports      : List all used ports
+mac ip.loc     : Get Local IP address
+mac ip.pub     : Get Public IP address
+mac sleep      : Put your mac into sleep mode
+mac clock      : Show a clock at the top right of your terminal
+mac battery    : Show battery status
+mac fd.size    : Show the folder size.
+mac fd.hid     : List only hidden files in the folder.
+mac hid.on     : Show hidden folders in Finder
+mac hid.off    : Hide hidden dolfers in Finder
+mac bt.stat    : Show the bluetooth status
+mac bt.on      : Turn the bluetooth ON
+mac bt.off     : Turn the bluetooth OFF
+mac wifi.stat  : Show the status of WiFi
+mac wifi.scan  : Scan available WiFI
+mac wifi.on    : Turn your WiFi service ON
+mac wifi.off   : Turn your WIFI service OFF
+mac wifi.pass  : Get WiFi password
+mac ejectall   : Eject all mounted volumes
 --------------------------------------------------------------
 Git Related
 mac g.log      : Get the log of the project
 mac g.stat     : Print the status of the proejct
 mac g.open     : Open the Git repo from URL
 mac g.size     : Calculate the size of Git Repo
-mac g.add      : Add an push/pull origin
+mac g.re       : Add an push/pull origin
 mac g.conf     : List the git configuration
 mac g.undo     : Undo last commit
+mac g.add      : Stage a file
+mac g.add.all  : Stage all the changes
+mac g.commit   : Commit the changes
+mac g.ac       : Stage a file and commit
+mac g.aca      : Stage all changes and commit
+mac g.acp      : Stage file, commit and push
+mac g.acap     : Stage all, commit and push
+mac g.mv       : Move file to new destination
+mac g.rm       : Remove file.
 mac g.push     : Push to current branch
 mac g.pull     : Pull to current branch
 mac g.merge    : Merge a specific branch
