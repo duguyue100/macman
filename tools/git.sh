@@ -40,6 +40,14 @@ case "$fn" in
         git reset --soft HEAD~
     ;;
 
+    "g.init")
+        git init
+    ;;
+
+    "g.clone")
+        git clone "$allParameters"
+    ;;
+
     "g.add")
         git add "$allParameters"
     ;;
@@ -183,6 +191,34 @@ case "$fn" in
         else
             echo "Please specify the name of the branch you want to remove from local and remote"
         fi
+    ;;
+
+    "g.lfs.init")
+        git lfs install
+    ;;
+
+    "g.lfs.tk")
+        if [ ! -z "$firstParameter" -a "$firstParameter" != " " ]; then
+            git lfs track $firstParameter
+        else
+            echo "Please specify the files you want to track"
+        fi
+    ;;
+
+    "g.lfs.untk")
+        if [ ! -z "$firstParameter" -a "$firstParameter" != " " ]; then
+            git lfs untrack $firstParameter
+        else
+            echo "Please specify the files you want to untrack"
+        fi
+    ;;
+
+    "g.lfs.ls")
+        git lfs ls-files
+    ;;
+
+    "g.lfs.conf")
+        git lfs env
     ;;
 
 esac

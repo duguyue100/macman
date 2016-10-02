@@ -42,6 +42,8 @@ COMMANDS=(
     wifi.off
     wifi.pass
     ejectall
+    g.init
+    g.clone
     g.log
     g.stat
     g.open
@@ -68,6 +70,11 @@ COMMANDS=(
     g.ls.bh
     g.rm.bh
     g.rm.re.bh
+    g.lfs.init
+    g.lfs.tk
+    g.lfs.untk
+    g.lfs.ls
+    g.lfs.conf
     pdf.html
     wttr
     top10

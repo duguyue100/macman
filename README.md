@@ -34,7 +34,7 @@ Shutdown your machine
 mac shutdown
 ```
 
-## Available Functions - 66 and counting...
+## Available Functions - 73 and counting...
 
 ```
 Mac OS X Terminal Tools
@@ -68,6 +68,8 @@ mac wifi.pass  : Get WiFi password
 mac ejectall   : Eject all mounted volumes
 --------------------------------------------------------------
 Git Related
+mac g.init     : Init a Git repository locally
+mac g.clone    : Clone a project through URL
 mac g.log      : Get the log of the project
 mac g.stat     : Print the status of the proejct
 mac g.open     : Open the Git repo from URL
@@ -94,6 +96,11 @@ mac g.co.re.bh : Checkout a remote branch
 mac g.ls.bh    : List all the branch
 mac g.rm.bh    : Remove a local branch
 mac g.rm.re.bh : Remove a branch from local and remote
+mac g.lfs.init : Init LFS storage
+mac g.lfs.tk   : LFS track files
+mac g.lfs.untk : LFS untrack files
+mac g.lfs.ls   : List all tracked files
+mac g.lfs.conf : Get the environment variables for the LFS.
 --------------------------------------------------------------
 Functors - extra tools
 mac pdf.html   : Convert a PDF to HTML via pdf2htmlEX
