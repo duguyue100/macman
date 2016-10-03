@@ -1,14 +1,16 @@
-# mac-tools
+# macman
 
-Some handy tools for Mac OS X Terminal.
+_Some handy tools for Mac OS X Terminal._
 
 This project is heavily inspired by the project [Mac-CLI](https://github.com/guarinogabriel/Mac-CLI)
 but without much installation.
 
+The project name is suggested by [Mario](https://github.com/kmario23)
+
 ## Installation
 
 ```bash
-git clone https://github.com/duguyue100/mac-tools
+git clone https://github.com/duguyue100/macman
 ```
 
 Add the alias to the terminal profile:
@@ -135,6 +137,10 @@ npm install fast-cli
 ### Git related
 
 One could install Git from popular packaging management systems or visit [Git-website](https://git-scm.com/).
+
+### Git LFS
+
+One could install Git LFS from [Git LFS](https://git-lfs.github.com/)
 
 ### PDF2HTML
 
