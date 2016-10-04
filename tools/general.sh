@@ -134,5 +134,12 @@ case "$fn" in
         osascript -e 'tell application "Finder" to eject (every disk whose executable is true)'
     ;;
 
+    "md5")
+        if [ ! -z "$firstParameter" -a "$firstParameter" != " " ]; then
+            md5 $firstParameter
+        else
+            echo "Please specify a file to calculate the MD5"
+        fi
+    ;;
 
 esac

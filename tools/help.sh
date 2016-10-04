@@ -1,4 +1,4 @@
-#!/bin/sh
+
 
 case "$fn" in
     "list"|"help")
@@ -31,6 +31,7 @@ case "$fn" in
         echo "mac wifi.off   : Turn your WIFI service OFF"
         echo "mac wifi.pass  : Get WiFi password"
         echo "mac ejectall   : Eject all mounted volumes"
+        echo "mac md5        : Calculate MD5 for a file"
         echo "--------------------------------------------------------------"
         echo "Git Related"
         echo "mac g.init     : Init a Git repository locally"

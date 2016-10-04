@@ -42,6 +42,7 @@ COMMANDS=(
     wifi.off
     wifi.pass
     ejectall
+    md5
     g.init
     g.clone
     g.log
