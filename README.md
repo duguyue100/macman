@@ -36,7 +36,7 @@ Shutdown your machine
 mac shutdown
 ```
 
-## Available Functions - 79 and counting...
+## Available Functions - 80 and counting...
 
 ```
 Mac OS X Terminal Tools
@@ -116,6 +116,7 @@ mac cal.mon    : Get this month's detail calendar
 mac cal.add    : Add a quick event
 mac say        : Text to speech
 mac mail       : Open GMail
+mac compose    : Compose new email through GMail
 mac compute    : A Calculator
 mac define     : Define word with Dictionary app
 --------------------------------------------------------------

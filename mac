@@ -86,6 +86,7 @@ COMMANDS=(
     cal.add
     say
     mail
+    compose
     compute
     define
     lszip

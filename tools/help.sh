@@ -79,6 +79,7 @@ case "$fn" in
         echo "mac cal.add    : Add a quick event"
         echo "mac say        : Text to speech"
         echo "mac mail       : Open GMail"
+        echo "mac compose    : Compose new email through GMail"
         echo "mac compute    : A Calculator"
         echo "mac define     : Define word with Dictionary app"
         echo "--------------------------------------------------------------"

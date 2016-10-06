@@ -68,6 +68,10 @@ case "$fn" in
         open https://mail.google.com/
     ;;
 
+    "compose")
+        open https://mail.google.com/mail/#compose
+    ;;
+
     "compute")
         bc
     ;;
