@@ -89,6 +89,7 @@ COMMANDS=(
     compose
     compute
     define
+    ol.open
     lszip
     unzip
     zip

@@ -84,4 +84,10 @@ case "$fn" in
         fi
     ;;
 
+    # Open Overleaf project
+    "ol.open")
+        git_remote=`git config --get remote.origin.url`
+        open "${git_remote/git/www}"
+    ;;
+
 esac

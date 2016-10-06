@@ -36,7 +36,7 @@ Shutdown your machine
 mac shutdown
 ```
 
-## Available Functions - 80 and counting...
+## Available Functions - 81 and counting...
 
 ```
 Mac OS X Terminal Tools
@@ -119,6 +119,7 @@ mac mail       : Open GMail
 mac compose    : Compose new email through GMail
 mac compute    : A Calculator
 mac define     : Define word with Dictionary app
+mac ol.open    : Open a Overleaf Project
 --------------------------------------------------------------
 Compressor
 mac lszip      : List file in a ZIP archive.
