@@ -36,7 +36,7 @@ Shutdown your machine
 mac shutdown
 ```
 
-## Available Functions - 73 and counting...
+## Available Functions - 79 and counting...
 
 ```
 Mac OS X Terminal Tools
@@ -68,6 +68,7 @@ mac wifi.on    : Turn your WiFi service ON
 mac wifi.off   : Turn your WIFI service OFF
 mac wifi.pass  : Get WiFi password
 mac ejectall   : Eject all mounted volumes
+mac md5        : Calculate MD5 for a file
 --------------------------------------------------------------
 Git Related
 mac g.init     : Init a Git repository locally
@@ -113,6 +114,10 @@ mac cal        : Get 5 days agenda
 mac cal.week   : Get this week's detail calendar
 mac cal.mon    : Get this month's detail calendar
 mac cal.add    : Add a quick event
+mac say        : Text to speech
+mac mail       : Open GMail
+mac compute    : A Calculator
+mac define     : Define word with Dictionary app
 --------------------------------------------------------------
 Compressor
 mac lszip      : List file in a ZIP archive.

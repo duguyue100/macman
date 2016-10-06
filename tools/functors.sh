@@ -55,4 +55,29 @@ case "$fn" in
         fi
     ;;
 
+    "say")
+        if [ ! -z "$firstParameter" -a "$firstParameter" != " " ]; then
+            say $firstParameter
+        else
+            echo "Please specify a valid string query"
+        fi
+    ;;
+
+    # Open Gmail
+    "mail")
+        open https://mail.google.com/
+    ;;
+
+    "compute")
+        bc
+    ;;
+
+    "define")
+        if [ ! -z "$firstParameter" -a "$firstParameter" != " " ]; then
+            open dict://$firstParameter
+        else
+            echo "Please specify the word you want to define"
+        fi
+    ;;
+
 esac

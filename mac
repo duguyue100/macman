@@ -84,6 +84,10 @@ COMMANDS=(
     cal.week
     cal.mon
     cal.add
+    say
+    mail
+    compute
+    define
     lszip
     unzip
     zip
