@@ -109,6 +109,14 @@ fi
 if [[ ! " ${COMMANDS[@]} " =~ " ${fn} " ]]; then
     echo "${RED}Command not found: ${NC}"
     echo "$fn"
+    echo
+    echo "Do you mean: "
+    for cmd in "${COMMANDS[@]}"; do
+        if test "${cmd#*$fn}" != "$cmd"
+        then
+            echo "${cmd}"
+        fi
+    done
 
     if [ ! -z "$allParameters" -a "$allParameters" != " " ]; then
         echo "${RED}\nParameters: ${NC}"

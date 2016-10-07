@@ -147,7 +147,6 @@ case "$fn" in
             scutil --nc start "$firstParameter"
         elif [ -f "$MAC/res/vpn.sh" ]; then
             source "$MAC/res/vpn.sh"
-            echo "$VPN_PORT"
             scutil --nc start "$VPN_PORT"
         else
             echo "Please specify a available VPN port or add your VPN configuration at /res/vpn.sh"
@@ -159,7 +158,6 @@ case "$fn" in
             scutil --nc stop "$firstParameter"
         elif [ -f "$MAC/res/vpn.sh" ]; then
             source "$MAC/res/vpn.sh"
-            echo "$VPN_PORT"
             scutil --nc stop "$VPN_PORT"
         else
             echo "Please specify a available VPN port or add your VPN configuration at /res/vpn.sh"
