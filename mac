@@ -9,6 +9,7 @@ firstParameter=$2
 secondParameter=$3
 allParameters=${@:2}
 
+export MAC
 export fn
 export firstParameter
 export secondParameter
@@ -41,6 +42,9 @@ COMMANDS=(
     wifi.on
     wifi.off
     wifi.pass
+    vpn.start
+    vpn.stop
+    vpn.ls
     ejectall
     md5
     g.init

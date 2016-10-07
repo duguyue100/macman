@@ -142,4 +142,32 @@ case "$fn" in
         fi
     ;;
 
+    "vpn.start")
+        if [ ! -z "$firstParameter" -a "$firstParameter" != " " ]; then
+            scutil --nc start "$firstParameter"
+        elif [ -f "$MAC/res/vpn.sh" ]; then
+            source "$MAC/res/vpn.sh"
+            echo "$VPN_PORT"
+            scutil --nc start "$VPN_PORT"
+        else
+            echo "Please specify a available VPN port or add your VPN configuration at /res/vpn.sh"
+        fi
+    ;;
+
+    "vpn.stop")
+        if [ ! -z "$firstParameter" -a "$firstParameter" != " " ]; then
+            scutil --nc stop "$firstParameter"
+        elif [ -f "$MAC/res/vpn.sh" ]; then
+            source "$MAC/res/vpn.sh"
+            echo "$VPN_PORT"
+            scutil --nc stop "$VPN_PORT"
+        else
+            echo "Please specify a available VPN port or add your VPN configuration at /res/vpn.sh"
+        fi
+    ;;
+
+    "vpn.ls")
+        scutil --nc list
+    ;;
+
 esac
