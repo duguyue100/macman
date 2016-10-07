@@ -36,7 +36,7 @@ Shutdown your machine
 mac shutdown
 ```
 
-## Available Functions - 81 and counting...
+## Available Functions - 84 and counting...
 
 ```
 Mac OS X Terminal Tools
@@ -67,6 +67,9 @@ mac wifi.scan  : Scan available WiFI
 mac wifi.on    : Turn your WiFi service ON
 mac wifi.off   : Turn your WIFI service OFF
 mac wifi.pass  : Get WiFi password
+mac vpn.start  : Start a VPN.
+mac vpn.stop   : Stop a VPN.
+mac vpn.ls     : List all available VPNs.
 mac ejectall   : Eject all mounted volumes
 mac md5        : Calculate MD5 for a file
 --------------------------------------------------------------
@@ -166,6 +169,25 @@ and then install optional package by
 ```
 pip install vobject parsedatetime
 ```
+
+### Open Overleaf from cloned project
+
+The `git` URL that is given by Overleaf cannot be opened.
+Therefore, one can use `ol.open` to open the corresponding project from terminal.
+
+### VPN
+
+One can start VPN service by specifying predefined VPN port.
+If you don't want to key in the name of the VPN port repeatedly, one can
+create a file `vpn.sh` under `res` folder and write following script:
+
+```bash
+#!/bash/sh
+
+export VPN_PORT="VPN NAME"
+```
+
+Then you should be able to start or stop this VPN service without the parameter.
 
 ## Contacts
 
