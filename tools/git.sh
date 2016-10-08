@@ -109,11 +109,11 @@ case "$fn" in
     ;;
 
     "g.mv")
-        git mv "$allParameters"
+        git mv $allParameters
     ;;
 
     "g.rm")
-        git rm "$allParameters"
+        git rm $allParameters
     ;;
 
     "g.push")
