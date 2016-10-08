@@ -16,7 +16,7 @@ git clone https://github.com/duguyue100/macman
 Add the alias to the terminal profile:
 
 ```bash
-alias mac="/path/to/macman/mac"
+alias mac="/path/to/macman/macman"
 ```
 
 And you are done!
