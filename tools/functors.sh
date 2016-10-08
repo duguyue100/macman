@@ -90,4 +90,12 @@ case "$fn" in
         open "${git_remote/git/www}"
     ;;
 
+    "imshow")
+        if [ ! -z "$firstParameter" -a "$firstParameter" != " " ]; then
+            $MAC/res/imgcat $firstParameter
+        else
+            echo "Please specify the image you want to show."
+        fi
+    ;;
+
 esac

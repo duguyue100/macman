@@ -36,7 +36,7 @@ Shutdown your machine
 mac shutdown
 ```
 
-## Available Functions - 84 and counting...
+## Available Functions - 85 and counting...
 
 ```
 Mac OS X Terminal Tools
@@ -123,6 +123,7 @@ mac compose    : Compose new email through GMail
 mac compute    : A Calculator
 mac define     : Define word with Dictionary app
 mac ol.open    : Open a Overleaf Project
+mac imshow     : Show image in terminal via iTerm2
 --------------------------------------------------------------
 Compressor
 mac lszip      : List file in a ZIP archive.
@@ -188,6 +189,13 @@ export VPN_PORT="VPN NAME"
 ```
 
 Then you should be able to start or stop this VPN service without the parameter.
+
+### Show image in terminal
+
+If you are using [iTerm2](https://www.iterm2.com/index.html), then you can show
+image in terminal via [imgcat](https://raw.githubusercontent.com/gnachman/iTerm2/master/tests/imgcat).
+
+_Note this function only works with iTerm2_
 
 ## Contacts
 

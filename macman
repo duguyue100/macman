@@ -94,6 +94,7 @@ COMMANDS=(
     compute
     define
     ol.open
+    imshow
     lszip
     unzip
     zip
