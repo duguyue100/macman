@@ -197,6 +197,14 @@ image in terminal via [imgcat](https://raw.githubusercontent.com/gnachman/iTerm2
 
 _Note this function only works with iTerm2_
 
+Download `imgcat` and place at `res` folder. Then do
+
+```bash
+chmod +x imgcat
+```
+
+And then you can use this function.
+
 ## Contacts
 
 Yuhuang Hu  
