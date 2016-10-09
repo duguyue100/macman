@@ -49,7 +49,7 @@ case "$fn" in
         if [ ! -z "$firstParameter" -a "$firstParameter" != " " ]; then
             tmux new -s "$firstParameter"
         else
-            echo "Please specify your session name"
+            tmux
         fi
     ;;
 
