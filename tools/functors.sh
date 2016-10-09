@@ -98,4 +98,8 @@ case "$fn" in
         fi
     ;;
 
+    "ascii")
+        man ascii
+    ;;
+
 esac

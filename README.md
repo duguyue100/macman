@@ -36,7 +36,7 @@ Shutdown your machine
 mac shutdown
 ```
 
-## Available Functions - 85 and counting...
+## Available Functions - 108 and counting...
 
 ```
 Mac OS X Terminal Tools
@@ -124,6 +124,7 @@ mac compute    : A Calculator
 mac define     : Define word with Dictionary app
 mac ol.open    : Open a Overleaf Project
 mac imshow     : Show image in terminal via iTerm2
+mac ascii      : Print ASCII table
 --------------------------------------------------------------
 Compressor
 mac lszip      : List file in a ZIP archive.
@@ -132,6 +133,30 @@ mac unzip      : Unzip a file or folder.
 mac lstar      : List file in a tar archive.
 mac tar        : Tar a file or folder.
 mac untar      : Untar a file or folder.
+--------------------------------------------------------------
+Terminal Multiplexer (screen and tmux)
+mac s.at       : Create a new screen session
+mac s.re       : Reattach a screen session
+mac s.de       : Detach a screen session
+mac s.rm       : Remove a screen session
+mac s.ls       : List all available screen session(s)
+mac t.at       : Create a new tmux session
+mac t.re       : Reattach a tmux session
+mac t.de       : Detach a tmux session
+mac t.rm       : Remove a tmux session
+mac t.rm.all   : Remove all tmux session(s)
+mac t.ls       : List all available tmux session(s)
+mac t.div.h    : Split pane horizontally
+mac t.div.v    : split pane vertically
+mac t.go.left  : Go left pane
+    (tl)
+mac t.go.right : Go right pane
+    (tr)
+mac t.go.up    : Go above pane
+    (tu)
+mac t.go.down  : Go below pane
+    (td)
+mac tpx        : Kill current pane
 ==============================================================
 ```
 
@@ -204,6 +229,14 @@ chmod +x imgcat
 ```
 
 And then you can use this function.
+
+### Terminal Multiplexer
+
+Mac has one old version of `screen` within the system, there are 5 basic
+commands available.
+
+You can insteall `tmux` through MacPorts, and the you can use a richer set of
+commands to manage your terminal.
 
 ## Contacts
 

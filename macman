@@ -95,12 +95,35 @@ COMMANDS=(
     define
     ol.open
     imshow
+    ascii
     lszip
     unzip
     zip
     lstar
     untar
     tar
+    s.re
+    s.de
+    s.ls
+    s.at
+    s.rm
+    t.at
+    t.ls
+    t.de
+    t.re
+    t.rm
+    t.rm.all
+    t.div.h
+    t.div.v
+    t.go.left
+    tl
+    t.go.right
+    tr
+    t.go.up
+    tu
+    t.go.down
+    td
+    tpx
 )
 
 if [ -z "$fn" ]; then
@@ -131,3 +154,4 @@ fi
 "$MAC/tools/git.sh"
 "$MAC/tools/functors.sh"
 "$MAC/tools/compressor.sh"
+"$MAC/tools/multiterm.sh"
