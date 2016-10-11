@@ -3,8 +3,12 @@
 # Some functions related to some Git routines.
 
 case "$fn" in
-    "g.log")
-        git log --oneline | nl -v0 | sed 's/^ \+/&HEAD~/'
+    "g.log") 
+        if [ ! -z "$firstParameter" -a "$firstParameter" != " " ]; then
+            git log --follow $firstParameter
+        else
+            git log --oneline | nl -v0 | sed 's/^ \+/&HEAD~/'
+        fi
     ;;
 
     "g.stat")
