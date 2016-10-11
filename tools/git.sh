@@ -15,7 +15,7 @@ case "$fn" in
         git status
     ;;
 
-    "g.open")
+    "g.open"|"go")
          open `git remote -v | awk '/fetch/{print $2}' | sed -Ee 's#(git@|git://)#http://#' -e 's@com:@com/@'`| head -n1
     ;;
 

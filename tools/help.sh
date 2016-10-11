@@ -41,7 +41,7 @@ case "$fn" in
         echo "mac g.clone    : Clone a project through URL"
         echo "mac g.log      : Get the log of the project"
         echo "mac g.stat     : Print the status of the proejct"
-        echo "mac g.open     : Open the Git repo from URL"
+        echo "mac g.open|go  : Open the Git repo from URL"
         echo "mac g.size     : Calculate the size of Git Repo"
         echo "mac g.re       : Add an push/pull origin"
         echo "mac g.conf     : List the git configuration"

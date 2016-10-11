@@ -52,6 +52,7 @@ COMMANDS=(
     g.log
     g.stat
     g.open
+    go
     g.size
     g.re
     g.conf
