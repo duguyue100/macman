@@ -1,5 +1,7 @@
 # macman
 
+[![GitHub release](https://img.shields.io/github/release/duguyue100/macman.svg?maxAge=2592000)](https://github.com/duguyue100/macman)
+
 _Some handy tools for Mac OS X Terminal._
 
 This project is heavily inspired by the project [Mac-CLI](https://github.com/guarinogabriel/Mac-CLI)
@@ -36,10 +38,9 @@ Shutdown your machine
 mac shutdown
 ```
 
-## Available Functions - 109 and counting...
+## Available Functions - 111 and counting...
 
 ```
-
 Mac OS X Terminal Tools
 ==============================================================
 mac list/help  : List all the available commands.
@@ -79,7 +80,7 @@ mac g.init     : Init a Git repository locally
 mac g.clone    : Clone a project through URL
 mac g.log      : Get the log of the project
 mac g.stat     : Print the status of the proejct
-mac g.open|go  : Open the Git repo from URL
+mac g.open/go  : Open the Git repo from URL
 mac g.size     : Calculate the size of Git Repo
 mac g.re       : Add an push/pull origin
 mac g.conf     : List the git configuration
