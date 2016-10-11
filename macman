@@ -96,6 +96,7 @@ COMMANDS=(
     ol.open
     imshow
     ascii
+    vim
     lszip
     unzip
     zip

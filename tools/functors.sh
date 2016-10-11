@@ -102,4 +102,8 @@ case "$fn" in
         man ascii
     ;;
 
+    "vim")
+        open http://vim.rtorr.com/
+    ;;
+
 esac

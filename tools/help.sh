@@ -88,6 +88,7 @@ case "$fn" in
         echo "mac ol.open    : Open a Overleaf Project"
         echo "mac imshow     : Show image in terminal via iTerm2"
         echo "mac ascii      : Print ASCII table"
+        echo "mac vim        : Open online VIM cheatsheet"
         echo "--------------------------------------------------------------"
         echo "Compressor"
         echo "mac lszip      : List file in a ZIP archive."

@@ -36,7 +36,7 @@ Shutdown your machine
 mac shutdown
 ```
 
-## Available Functions - 108 and counting...
+## Available Functions - 109 and counting...
 
 ```
 Mac OS X Terminal Tools
@@ -125,6 +125,7 @@ mac define     : Define word with Dictionary app
 mac ol.open    : Open a Overleaf Project
 mac imshow     : Show image in terminal via iTerm2
 mac ascii      : Print ASCII table
+mac vim        : Open online VIM cheatsheet"
 --------------------------------------------------------------
 Compressor
 mac lszip      : List file in a ZIP archive.
