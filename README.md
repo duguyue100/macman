@@ -39,6 +39,7 @@ mac shutdown
 ## Available Functions - 109 and counting...
 
 ```
+
 Mac OS X Terminal Tools
 ==============================================================
 mac list/help  : List all the available commands.
@@ -78,7 +79,7 @@ mac g.init     : Init a Git repository locally
 mac g.clone    : Clone a project through URL
 mac g.log      : Get the log of the project
 mac g.stat     : Print the status of the proejct
-mac g.open     : Open the Git repo from URL
+mac g.open|go  : Open the Git repo from URL
 mac g.size     : Calculate the size of Git Repo
 mac g.re       : Add an push/pull origin
 mac g.conf     : List the git configuration
@@ -125,7 +126,7 @@ mac define     : Define word with Dictionary app
 mac ol.open    : Open a Overleaf Project
 mac imshow     : Show image in terminal via iTerm2
 mac ascii      : Print ASCII table
-mac vim        : Open online VIM cheatsheet"
+mac vim        : Open online VIM cheatsheet
 --------------------------------------------------------------
 Compressor
 mac lszip      : List file in a ZIP archive.
