@@ -78,7 +78,7 @@ case "$fn" in
 
     "define")
         if [ ! -z "$firstParameter" -a "$firstParameter" != " " ]; then
-            open dict://$firstParameter
+            open dict://"$firstParameter"
         else
             echo "Please specify the word you want to define"
         fi
