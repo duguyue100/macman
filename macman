@@ -95,6 +95,7 @@ COMMANDS=(
     compute
     define
     ol.open
+    olgo
     imshow
     ascii
     vim

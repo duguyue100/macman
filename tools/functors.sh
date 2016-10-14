@@ -85,7 +85,7 @@ case "$fn" in
     ;;
 
     # Open Overleaf project
-    "ol.open")
+    "ol.open"|"olgo")
         git_remote=`git config --get remote.origin.url`
         open "${git_remote/git/www}"
     ;;
