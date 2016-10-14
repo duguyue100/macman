@@ -106,4 +106,11 @@ case "$fn" in
         open http://vim.rtorr.com/
     ;;
 
+    # return a cat GIF in iTerm
+    "cat")
+        wget -q "http://thecatapi.com/api/images/get?format=src&type=gif" -O /tmp/cat.gif
+        $MAC/res/imgcat /tmp/cat.gif
+        rm /tmp/cat.gif
+    ;;
+
 esac

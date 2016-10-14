@@ -99,6 +99,7 @@ COMMANDS=(
     imshow
     ascii
     vim
+    cat
     lszip
     unzip
     zip
