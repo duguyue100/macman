@@ -40,128 +40,141 @@ mac shutdown
 
 ## Available Functions - 111 and counting...
 
-```
-Mac OS X Terminal Tools
-==============================================================
-mac list/help  : List all the available commands.
-mac info       : Get OS X version information
-mac lock       : Lock your mac
-mac restart    : Restart your mac
-mac shutdown   : Shutdown your mac
-mac uptime     : Get the time since last restart
-mac mem        : Get the memory status
-mac speed      : Network speed test (with npm's fast-cli package)
-mac ports      : List all used ports
-mac ip.loc     : Get Local IP address
-mac ip.pub     : Get Public IP address
-mac sleep      : Put your mac into sleep mode
-mac clock      : Show a clock at the top right of your terminal
-mac battery    : Show battery status
-mac fd.size    : Show the folder size.
-mac fd.hid     : List only hidden files in the folder.
-mac hid.on     : Show hidden folders in Finder
-mac hid.off    : Hide hidden dolfers in Finder
-mac bt.stat    : Show the bluetooth status
-mac bt.on      : Turn the bluetooth ON
-mac bt.off     : Turn the bluetooth OFF
-mac wifi.stat  : Show the status of WiFi
-mac wifi.scan  : Scan available WiFI
-mac wifi.on    : Turn your WiFi service ON
-mac wifi.off   : Turn your WIFI service OFF
-mac wifi.pass  : Get WiFi password
-mac vpn.start  : Start a VPN.
-mac vpn.stop   : Stop a VPN.
-mac vpn.ls     : List all available VPNs.
-mac ejectall   : Eject all mounted volumes
-mac md5        : Calculate MD5 for a file
---------------------------------------------------------------
-Git Related
-mac g.init     : Init a Git repository locally
-mac g.clone    : Clone a project through URL
-mac g.log      : Get the log of the project
-mac g.stat     : Print the status of the proejct
-mac g.open/go  : Open the Git repo from URL
-mac g.size     : Calculate the size of Git Repo
-mac g.re       : Add an push/pull origin
-mac g.conf     : List the git configuration
-mac g.undo     : Undo last commit
-mac g.add      : Stage a file
-mac g.add.all  : Stage all the changes
-mac g.commit   : Commit the changes
-mac g.ac       : Stage a file and commit
-mac g.aca      : Stage all changes and commit
-mac g.acp      : Stage file, commit and push
-mac g.acap     : Stage all, commit and push
-mac g.mv       : Move file to new destination
-mac g.rm       : Remove file.
-mac g.push     : Push to current branch
-mac g.pull     : Pull to current branch
-mac g.merge    : Merge a specific branch
-mac g.th.bh    : Touch (create) a new branch
-mac g.th.re.bh : Touch (clone) a remote branch
-mac g.co.bh    : Checkout a existing branch
-mac g.co.re.bh : Checkout a remote branch
-mac g.ls.bh    : List all the branch
-mac g.rm.bh    : Remove a local branch
-mac g.rm.re.bh : Remove a branch from local and remote
-mac g.lfs.init : Init LFS storage
-mac g.lfs.tk   : LFS track files
-mac g.lfs.untk : LFS untrack files
-mac g.lfs.ls   : List all tracked files
-mac g.lfs.conf : Get the environment variables for the LFS.
---------------------------------------------------------------
-Functors - extra tools
-mac pdf.html   : Convert a PDF to HTML via pdf2htmlEX
-mac wttr       : Show the weather for a city.
-mac top10      : Show the top10 used shell commands.
-mac starwar    : Text based Starwar IV
-mac cal        : Get 5 days agenda
-mac cal.week   : Get this week's detail calendar
-mac cal.mon    : Get this month's detail calendar
-mac cal.add    : Add a quick event
-mac say        : Text to speech
-mac mail       : Open GMail
-mac compose    : Compose new email through GMail
-mac compute    : A Calculator
-mac define     : Define word with Dictionary app
-mac ol.open    : Open a Overleaf Project
-mac imshow     : Show image in terminal via iTerm2
-mac ascii      : Print ASCII table
-mac vim        : Open online VIM cheatsheet
---------------------------------------------------------------
-Compressor
-mac lszip      : List file in a ZIP archive.
-mac zip        : Zip a file or folder.
-mac unzip      : Unzip a file or folder.
-mac lstar      : List file in a tar archive.
-mac tar        : Tar a file or folder.
-mac untar      : Untar a file or folder.
---------------------------------------------------------------
-Terminal Multiplexer (screen and tmux)
-mac s.at       : Create a new screen session
-mac s.re       : Reattach a screen session
-mac s.de       : Detach a screen session
-mac s.rm       : Remove a screen session
-mac s.ls       : List all available screen session(s)
-mac t.at       : Create a new tmux session
-mac t.re       : Reattach a tmux session
-mac t.de       : Detach a tmux session
-mac t.rm       : Remove a tmux session
-mac t.rm.all   : Remove all tmux session(s)
-mac t.ls       : List all available tmux session(s)
-mac t.div.h    : Split pane horizontally
-mac t.div.v    : split pane vertically
-mac t.go.left  : Go left pane
-    (tl)
-mac t.go.right : Go right pane
-    (tr)
-mac t.go.up    : Go above pane
-    (tu)
-mac t.go.down  : Go below pane
-    (td)
-mac tpx        : Kill current pane
-==============================================================
-```
+### General
+
+| Command          | Parameters  | Description                                          |
+| :------          | :---------- | :-------------------------------                     |
+| `list` or `help` |             | List all the available commands.                     |
+| `info`           |             | Get OS X version information.                        |
+| `gen`            |             | Get help for General functions.                      |
+| `git` or `g`     |             | Get help for Git related functions.                  |
+| `fun` or `f`     |             | Get help for Functors related functions.             |
+| `com` or `c`     |             | Get help for Compressor related functions.           |
+| `term` or `t`    |             | Get help for Terminal Multiplexer related functions. |
+| `lock`           |             | Lock your mac.                                       |
+| `sleep`          |             | Put your Mac into sleep mode                         |
+| `restart`        |             | Restart your mac.                                    |
+| `shutdown`       |             | Shutdown your mac.                                   |
+| `uptime`         |             | Get the time since last restart.                     |
+| `mem`            |             | Get the memory status.                               |
+| `speed`          |             | Network speed test with `npm`'s `fast-cli` package.  |
+| `ports`          |             | List all used ports.                                 |
+| `ip.loc`         |             | Get local IP address.                                |
+| `ip.pub`         |             | Get public IP address.                               |
+| `clock`          |             | Show a clock at the top right of your terminal.      |
+| `battery`        |             | Show battery status.                                 |
+| `fd.size`        |             | Show the folder size.                                |
+| `fd.hid`         |             | List only hidden files in the folder.                |
+| `hid.on`         |             | Show hidden files in Finder.                         |
+| `hid.off`        |             | Hide hidden files in Finder.                         |
+| `bt.stat`        |             | Show the Bluetooth status.                           |
+| `bt.on`          |             | Turn the Bluetooth ON.                               |
+| `bt.off`         |             | Tern the Bluetooth OFF.                              |
+| `wifi.stat`      |             | Show the status of WiFi.                             |
+| `wifi.scan`      |             | Scan the available WiFi                              |
+| `wifi.on`        |             | Turn the WiFi service ON.                            |
+| `wifi.off`       |             | Turn the WiFi service OFF.                           |
+| `wifi.pass`      |             | Get WiFi password.                                   |
+| `vpn.start`      | `vpn name`  | Start a VPN by name or by default configuration.     |
+| `vpn.stop`       |             | Stop a VPN.                                          |
+| `vpn.ls`         |             | List all available VPNs.                             |
+| `ejectall`       |             | Eject all mounted volumes.                           |
+| `md5`            | `file`      | Calculate MD5 for a file.                            |
+
+### Git
+
+| Command          | Parameters      | Description                                |
+| :------          | :----------     | :-------------------------------           |
+| `g.init`         |                 | Init a Git repository locally.             |
+| `g.clone`        | `repo link`     | Clone a project through URL.               |
+| `g.log`          | `(OPT) file`    | Get the log for the file or the repo.      |
+| `g.stat`         |                 | Get the status of the repo.                |
+| `g.open` or `go` |                 | Open the Git repo from URL.                |
+| `g.size`         |                 | Calculate the size of Git repo.            |
+| `g.re`           | `URL`           | Add an pull/pull origin.                   |
+| `g.conf`         |                 | List the Git repo configuration.           |
+| `g.undo`         |                 | Undo last commit.                          |
+| `g.add`          | `file`          | Stage a file.                              |
+| `g.add.all`      |                 | Stage all the changes.                     |
+| `g.commit`       | `msg`           | Commit the changes.                        |
+| `g.ac`           | `file` `msg`    | Stage a file and commit.                   |
+| `g.aca`          | `msg`           | Stage all changes and commit.              |
+| `g.acp`          | `file` `msg`    | Stage file, commit and push.               |
+| `g.acap`         | `msg`           | Stage all changes, commit and push.        |
+| `g.mv`           | `file1` `file2` | Move file to new destination               |
+| `g.rm`           | `file`          | Remove file.                               |
+| `g.push`         |                 | Push current branch.                       |
+| `g.pull`         |                 | Pull current branch.                       |
+| `g.merge`        | `branch`        | Merge a specific branch.                   |
+| `g.th.bh`        | `branch`        | Create a new branch.                       |
+| `g.th.re.bh`     | `remote branch` | Clone a remote branch.                     |
+| `g.co.bh`        | `branch`        | Checkout a existing branch.                |
+| `g.co.re.bh`     | `remote branch` | Checkout a remote branch.                  |
+| `g.ls.bh`        |                 | List all the branch.                       |
+| `g.rm.bh`        | `branch`        | Remove a local branch.                     |
+| `g.rm.re.bh`     | `branch`        | Remove a branch from local and remote.     |
+| `g.lfs.init`     |                 | Initial LFS storage.                       |
+| `g.lfs.tk`       | `file`          | LFS track files.                           |
+| `g.lfs.untk`     | `file`          | LFS untrack files.                         |
+| `g.lfs.ls`       |                 | List all tracked files.                    |
+| `glfs.conf`      |                 | Get the environmetn variables for the LFS. |
+
+### Functors
+
+| Command             | Parameters  | Description                             |
+| :------             | :---------- | :-------------------------------        |
+| `pdf.html`          | `file`      | Convert a PDF to HTML via `pdf2htmlEX`. |
+| `wttr`              |             | Show the weather for a city.            |
+| `top10`             |             | Show the top 10 used shell commands.    |
+| `starwar`           |             | Text based Starwar IV.                  |
+| `cal`               |             | Get 5 days agenda.                      |
+| `cal.week`          |             | Get this week's detail calendar.        |
+| `cal.mon`           |             | Get this month's detail calendar.       |
+| `cal.add`           | `xx:xx msg` | Add a quick event.                      |
+| `say`               | `msg`       | Text to speech.                         |
+| `mail`              |             | Open GMail.                             |
+| `compose`           |             | Compose new email through GMail.        |
+| `compute`           |             | A calculator.                           |
+| `define`            | `word`      | Define word with Dictionary app.        |
+| `ol.open` or `olgo` |             | Open a Overleaf Project.                |
+| `imshow`            | `image`     | Show image in terminal via `iTerm2`.    |
+| `cat`               |             | Show a random cat GIF via `iTerm2`.     |
+| `ascii`             |             | Print ASCII table.                      |
+| `vim`               |             | Open online VIM cheatsheet.             |
+
+### Compressor
+
+| Command | Parameters            | Description                      |
+| :------ | :----------           | :------------------------------- |
+| `lszip` | `file`                | List file in a ZIP archive.      |
+| `zip`   | `file` or `folder`    | Zip a file or folder.            |
+| `unzip` | `file` `(OPT) folder` | Unzip a file to a folder.        |
+| `lstar` | `file`                | List file in a tar archive.      |
+| `tar`   | `file` or `folder`    | Tar a file or folder.            |
+| `untar` | `file` `(OPT) folder` | Untar a file to a folder.        |
+
+### Terminal Multiplexer
+
+| Command              | Parameters   | Description                           |
+| :------              | :----------  | :-------------------------------      |
+| `s.at`               | `(OPT) name` | Create a new screen session.          |
+| `s.re`               | `name`       | Reattach a screen session.            |
+| `s.de`               | `name`       | Detach a screen session.              |
+| `s.rm`               | `name`       | Remove a screen session.              |
+| `s.ls`               |              | List all available screen session(s). |
+| `t.at`               | `(OPT) name` | Create a new tmux session.            |
+| `t.re`               | `name`       | Detach a tmux session.                |
+| `t.de`               |              | Detach current tmux session.          |
+| `t.rm`               | `name`       | Remove a tmux session.                |
+| `t.rm.all`           |              | Remove all tmux session(s).           |
+| `t.ls`               |              | List all available tmux session(s).   |
+| `t.div.h`            |              | Split pane horizontally.              |
+| `t.div.v`            |              | Split pane vertically.                |
+| `t.go.left` or `tl`  |              | Go left pane.                         |
+| `t.go.right` or `tr` |              | Go right pane.                        |
+| `t.go.up` or `tu`    |              | Go above pane.                        |
+| `t.go.down` or `td`  |              | Go below pane.                        |
+| `tpx`                |              | Kill current pane.                    |
 
 ## Tools for Extra Functions
 

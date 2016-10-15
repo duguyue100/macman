@@ -17,6 +17,16 @@ export allParameters
 
 COMMANDS=(
     list
+    help
+    gen
+    git
+    g
+    fun
+    f
+    com
+    c
+    term
+    t
     info
     lock
     restart
