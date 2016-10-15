@@ -18,6 +18,8 @@ export allParameters
 COMMANDS=(
     list
     help
+    helper
+    h
     gen
     git
     g

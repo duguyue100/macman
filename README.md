@@ -45,12 +45,13 @@ mac shutdown
 | Command          | Parameters  | Description                                          |
 | :------          | :---------- | :-------------------------------                     |
 | `list` or `help` |             | List all the available commands.                     |
-| `info`           |             | Get OS X version information.                        |
+| `helper` or `h`  |             | Get help for help functions.                         |
 | `gen`            |             | Get help for General functions.                      |
 | `git` or `g`     |             | Get help for Git related functions.                  |
 | `fun` or `f`     |             | Get help for Functors related functions.             |
 | `com` or `c`     |             | Get help for Compressor related functions.           |
 | `term` or `t`    |             | Get help for Terminal Multiplexer related functions. |
+| `info`           |             | Get OS X version information.                        |
 | `lock`           |             | Lock your mac.                                       |
 | `sleep`          |             | Put your Mac into sleep mode                         |
 | `restart`        |             | Restart your mac.                                    |

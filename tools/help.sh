@@ -4,7 +4,10 @@ case "$fn" in
     "list"|"help")
         echo "Mac OS X Terminal Tools"
         echo "=============================================================="
+        echo "General"
+        echo "--------------------------------------------------------------"
         echo "mac list/help  : List all the available commands"
+        echo "mac helper/h   : Get help for help function"
         echo "mac gen        : Get help for General function"
         echo "mac git/g      : Get help for Git related functions"
         echo "mac fun/f      : Get help for Functors related functions"
@@ -42,6 +45,7 @@ case "$fn" in
         echo "mac md5        : Calculate MD5 for a file"
         echo "--------------------------------------------------------------"
         echo "Git Related"
+        echo "--------------------------------------------------------------"
         echo "mac g.init     : Init a Git repository locally"
         echo "mac g.clone    : Clone a project through URL"
         echo "mac g.log      : Get the log of the project"
@@ -77,6 +81,7 @@ case "$fn" in
         echo "mac g.lfs.conf : Get the environment variables for the LFS."
         echo "--------------------------------------------------------------"
         echo "Functors - extra tools"
+        echo "--------------------------------------------------------------"
         echo "mac pdf.html   : Convert a PDF to HTML via pdf2htmlEX"
         echo "mac wttr       : Show the weather for a city."
         echo "mac top10      : Show the top10 used shell commands."
@@ -98,6 +103,7 @@ case "$fn" in
         echo "mac cat        : Disply a random cat gif in iTerm"
         echo "--------------------------------------------------------------"
         echo "Compressor"
+        echo "--------------------------------------------------------------"
         echo "mac lszip      : List file in a ZIP archive"
         echo "mac zip        : Zip a file or folder"
         echo "mac unzip      : Unzip a file or folder"
@@ -106,6 +112,7 @@ case "$fn" in
         echo "mac untar      : Untar a file or folder"
         echo "--------------------------------------------------------------"
         echo "Terminal Multiplexer (screen and tmux)"
+        echo "--------------------------------------------------------------"
         echo "mac s.at       : Create a new screen session"
         echo "mac s.re       : Reattach a screen session"
         echo "mac s.de       : Detach a screen session"
@@ -131,9 +138,23 @@ case "$fn" in
         echo "=============================================================="
     ;;
 
+    "helper"|"h") 
+        echo "--------------------------------------------------------------"
+        echo "Helpers" 
+        echo "--------------------------------------------------------------"
+        echo "mac list/help  : List all the available commands"
+        echo "mac gen        : Get help for General function"
+        echo "mac git/g      : Get help for Git related functions"
+        echo "mac fun/f      : Get help for Functors related functions"
+        echo "mac com/c      : Get help for Compressor related functions"
+        echo "mac term/t     : Get help for Terminal Multiplexer related functions"
+        echo "--------------------------------------------------------------"
+    ;;
+
     "gen")
         echo "--------------------------------------------------------------"
         echo "General"
+        echo "--------------------------------------------------------------"
         echo "mac list/help  : List all the available commands"
         echo "mac info       : Get OS X version information"
         echo "mac lock       : Lock your mac"
@@ -171,6 +192,7 @@ case "$fn" in
     "git"|"g")
         echo "--------------------------------------------------------------"
         echo "Git Related"
+        echo "--------------------------------------------------------------"
         echo "mac g.init     : Init a Git repository locally"
         echo "mac g.clone    : Clone a project through URL"
         echo "mac g.log      : Get the log of the project"
@@ -210,6 +232,7 @@ case "$fn" in
     "fun"|"f")
         echo "--------------------------------------------------------------"
         echo "Functors - extra tools"
+        echo "--------------------------------------------------------------"
         echo "mac pdf.html   : Convert a PDF to HTML via pdf2htmlEX"
         echo "mac wttr       : Show the weather for a city."
         echo "mac top10      : Show the top10 used shell commands."
@@ -235,6 +258,7 @@ case "$fn" in
     "com"|"c")
         echo "--------------------------------------------------------------"
         echo "Compressor"
+        echo "--------------------------------------------------------------"
         echo "mac lszip      : List file in a ZIP archive"
         echo "mac zip        : Zip a file or folder"
         echo "mac unzip      : Unzip a file or folder"
@@ -247,6 +271,7 @@ case "$fn" in
     "term"|"t")
         echo "--------------------------------------------------------------"
         echo "Terminal Multiplexer (screen and tmux)"
+        echo "--------------------------------------------------------------"
         echo "mac s.at       : Create a new screen session"
         echo "mac s.re       : Reattach a screen session"
         echo "mac s.de       : Detach a screen session"
