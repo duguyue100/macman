@@ -1,6 +1,5 @@
 # macman
-
-[![GitHub release](https://img.shields.io/github/release/duguyue100/macman.svg?maxAge=2592000)](https://github.com/duguyue100/macman)
+[![GitHub release](https://img.shields.io/github/release/duguyue100/macman.svg?style=flat-square)](https://github.com/duguyue100/macman)
 
 _Some handy tools for Mac OS X Terminal._
 
