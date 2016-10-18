@@ -179,6 +179,7 @@ mac shutdown
 | `t.re.right` or `trr` |              | Expand current pane to right.         |
 | `t.re.up` or `tru`    |              | Expand current pane to up.            |
 | `t.re.down` or `trd`  |              | Expand current pane to down.          |
+
 ## Tools for Extra Functions
 
 ### Network speed test
