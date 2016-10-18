@@ -49,7 +49,7 @@ case "$fn" in
     ;;
 
     "g.clone")
-        git clone "$allParameters"
+        git clone $allParameters
     ;;
 
     "g.add")
