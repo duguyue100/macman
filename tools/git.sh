@@ -53,7 +53,7 @@ case "$fn" in
     ;;
 
     "g.add")
-        git add "$allParameters"
+        git add $allParameters
     ;;
 
     "g.add.all")
