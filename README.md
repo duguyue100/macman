@@ -37,7 +37,7 @@ Shutdown your machine
 mac shutdown
 ```
 
-## Available Functions - 112 and counting...
+## Available Functions - 116 and counting...
 
 ### General
 
@@ -155,27 +155,30 @@ mac shutdown
 
 ### Terminal Multiplexer
 
-| Command              | Parameters   | Description                           |
-| :------              | :----------  | :-------------------------------      |
-| `s.at`               | `(OPT) name` | Create a new screen session.          |
-| `s.re`               | `name`       | Reattach a screen session.            |
-| `s.de`               | `name`       | Detach a screen session.              |
-| `s.rm`               | `name`       | Remove a screen session.              |
-| `s.ls`               |              | List all available screen session(s). |
-| `t.at`               | `(OPT) name` | Create a new tmux session.            |
-| `t.re`               | `name`       | Detach a tmux session.                |
-| `t.de`               |              | Detach current tmux session.          |
-| `t.rm`               | `name`       | Remove a tmux session.                |
-| `t.rm.all`           |              | Remove all tmux session(s).           |
-| `t.ls`               |              | List all available tmux session(s).   |
-| `t.div.h`            |              | Split pane horizontally.              |
-| `t.div.v`            |              | Split pane vertically.                |
-| `t.go.left` or `tl`  |              | Go left pane.                         |
-| `t.go.right` or `tr` |              | Go right pane.                        |
-| `t.go.up` or `tu`    |              | Go above pane.                        |
-| `t.go.down` or `td`  |              | Go below pane.                        |
-| `tpx`                |              | Kill current pane.                    |
-
+| Command               | Parameters   | Description                           |
+| :------               | :----------  | :-------------------------------      |
+| `s.at`                | `(OPT) name` | Create a new screen session.          |
+| `s.re`                | `name`       | Reattach a screen session.            |
+| `s.de`                | `name`       | Detach a screen session.              |
+| `s.rm`                | `name`       | Remove a screen session.              |
+| `s.ls`                |              | List all available screen session(s). |
+| `t.at`                | `(OPT) name` | Create a new tmux session.            |
+| `t.re`                | `name`       | Detach a tmux session.                |
+| `t.de`                |              | Detach current tmux session.          |
+| `t.rm`                | `name`       | Remove a tmux session.                |
+| `t.rm.all`            |              | Remove all tmux session(s).           |
+| `t.ls`                |              | List all available tmux session(s).   |
+| `t.div.h`             |              | Split pane horizontally.              |
+| `t.div.v`             |              | Split pane vertically.                |
+| `t.go.left` or `tl`   |              | Go left pane.                         |
+| `t.go.right` or `tr`  |              | Go right pane.                        |
+| `t.go.up` or `tu`     |              | Go above pane.                        |
+| `t.go.down` or `td`   |              | Go below pane.                        |
+| `tpx`                 |              | Kill current pane.                    |
+| `t.re.left` or `trl`  |              | Expand current pane to left.          |
+| `t.re.right` or `trr` |              | Expand current pane to right.         |
+| `t.re.up` or `tru`    |              | Expand current pane to up.            |
+| `t.re.down` or `trd`  |              | Expand current pane to down.          |
 ## Tools for Extra Functions
 
 ### Network speed test

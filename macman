@@ -140,6 +140,14 @@ COMMANDS=(
     t.go.down
     td
     tpx
+    t.re.left
+    trl
+    t.re.right
+    trr
+    t.re.up
+    tru
+    t.re.down
+    trd
 )
 
 if [ -z "$fn" ]; then

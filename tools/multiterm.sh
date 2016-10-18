@@ -105,8 +105,24 @@ case "$fn" in
         tmux select-pane -D
     ;;
 
-    'tpx')
+    "tpx")
         tmux kill-pane
+    ;;
+
+    "t.re.left" | "trl")
+        tmux resize-pane -L 15
+    ;;
+
+    "t.re.right" | "trr")
+        tmux resize-pane -R 15
+    ;;
+
+    "t.re.up" | "tru")
+        tmux resize-pane -U 15
+    ;;
+
+    "t.re.down" | "trd")
+        tmux resize-pane -D 15
     ;;
 
 esac

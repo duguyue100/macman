@@ -135,6 +135,14 @@ case "$fn" in
         echo "mac t.go.down  : Go below pane"
         echo "    (td)"
         echo "mac tpx        : Kill current pane"
+        echo "mac t.re.left  : Expand current pane to left."
+        echo "    (trl)"
+        echo "mac t.re.right : Expand current pane to right."
+        echo "    (trr)"
+        echo "mac t.re.up    : Expand current pane to up."
+        echo "    (tru)"
+        echo "mac t.re.down  : Expand current pane to down."
+        echo "    (trd)"
         echo "=============================================================="
     ;;
 
@@ -294,6 +302,14 @@ case "$fn" in
         echo "mac t.go.down  : Go below pane"
         echo "    (td)"
         echo "mac tpx        : Kill current pane"
+        echo "mac t.re.left  : Expand current pane to left."
+        echo "    (trl)"
+        echo "mac t.re.right : Expand current pane to right."
+        echo "    (trr)"
+        echo "mac t.re.up    : Expand current pane to up."
+        echo "    (tru)"
+        echo "mac t.re.down  : Expand current pane to down."
+        echo "    (trd)"
         echo "--------------------------------------------------------------"
     ;;
 esac
