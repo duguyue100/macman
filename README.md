@@ -175,10 +175,10 @@ mac shutdown
 | `t.go.up` or `tu`     |              | Go above pane.                        |
 | `t.go.down` or `td`   |              | Go below pane.                        |
 | `tpx`                 |              | Kill current pane.                    |
-| `t.re.left` or `trl`  |              | Expand current pane to left.          |
-| `t.re.right` or `trr` |              | Expand current pane to right.         |
-| `t.re.up` or `tru`    |              | Expand current pane to up.            |
-| `t.re.down` or `trd`  |              | Expand current pane to down.          |
+| `t.re.left` or `trl`  | `space`      | Expand current pane to left.          |
+| `t.re.right` or `trr` | `space`      | Expand current pane to right.         |
+| `t.re.up` or `tru`    | `space`      | Expand current pane to up.            |
+| `t.re.down` or `trd`  | `space`      | Expand current pane to down.          |
 
 ## Tools for Extra Functions
 

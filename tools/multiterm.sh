@@ -110,19 +110,35 @@ case "$fn" in
     ;;
 
     "t.re.left" | "trl")
-        tmux resize-pane -L 15
+        if [ ! -z "$firstParameter" -a "$firstParameter" != " " ]; then
+            tmux resize-pane -L $firstParameter
+        else
+            tmux resize-pane -L 15
+        fi
     ;;
 
     "t.re.right" | "trr")
-        tmux resize-pane -R 15
+        if [ ! -z "$firstParameter" -a "$firstParameter" != " " ]; then
+            tmux resize-pane -R $firstParameter
+        else
+            tmux resize-pane -R 15
+        fi
     ;;
 
     "t.re.up" | "tru")
-        tmux resize-pane -U 15
+        if [ ! -z "$firstParameter" -a "$firstParameter" != " " ]; then
+            tmux resize-pane -U $firstParameter
+        else
+            tmux resize-pane -U 15
+        fi
     ;;
 
     "t.re.down" | "trd")
-        tmux resize-pane -D 15
+        if [ ! -z "$firstParameter" -a "$firstParameter" != " " ]; then
+            tmux resize-pane -D $firstParameter
+        else
+            tmux resize-pane -D 15
+        fi
     ;;
 
 esac
