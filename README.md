@@ -155,30 +155,42 @@ mac shutdown
 
 ### Terminal Multiplexer
 
-| Command               | Parameters   | Description                           |
-| :------               | :----------  | :-------------------------------      |
-| `s.at`                | `(OPT) name` | Create a new screen session.          |
-| `s.re`                | `name`       | Reattach a screen session.            |
-| `s.de`                | `name`       | Detach a screen session.              |
-| `s.rm`                | `name`       | Remove a screen session.              |
-| `s.ls`                |              | List all available screen session(s). |
-| `t.at`                | `(OPT) name` | Create a new tmux session.            |
-| `t.re`                | `name`       | Detach a tmux session.                |
-| `t.de`                |              | Detach current tmux session.          |
-| `t.rm`                | `name`       | Remove a tmux session.                |
-| `t.rm.all`            |              | Remove all tmux session(s).           |
-| `t.ls`                |              | List all available tmux session(s).   |
-| `t.div.h`             |              | Split pane horizontally.              |
-| `t.div.v`             |              | Split pane vertically.                |
-| `t.go.left` or `tl`   |              | Go left pane.                         |
-| `t.go.right` or `tr`  |              | Go right pane.                        |
-| `t.go.up` or `tu`     |              | Go above pane.                        |
-| `t.go.down` or `td`   |              | Go below pane.                        |
-| `tpx`                 |              | Kill current pane.                    |
-| `t.re.left` or `trl`  | `space`      | Expand current pane to left.          |
-| `t.re.right` or `trr` | `space`      | Expand current pane to right.         |
-| `t.re.up` or `tru`    | `space`      | Expand current pane to up.            |
-| `t.re.down` or `trd`  | `space`      | Expand current pane to down.          |
+| Command               | Parameters    | Description                             |
+| :------               | :----------   | :-------------------------------        |
+| `s.at`                | `(OPT) name`  | Create a new screen session.            |
+| `s.re`                | `name`        | Reattach a screen session.              |
+| `s.de`                | `name`        | Detach a screen session.                |
+| `s.ls`                |               | List all available screen session(s).   |
+| `s.rm`                | `name`        | Remove a screen session.                |
+| `s.rm.all"            |               | Remove all available screen session(s). |
+| `s.div.h`             |               | Split region horizontally.              |
+| `s.div.v`             |               | Split region vertically.                |
+| `s.go.left` or `sl`   |               | Go left region.                         |
+| `s.go.right` or `sr`  |               | Go right region.                        |
+| `s.go.up` or `su`     |               | Go above region.                        |
+| `s.go.down` or `sd`   |               | Go below region.                        |
+| `spx`                 |               | Kill current region.                    |
+| `s.re.left` or `srl`  | `(OPT) +space`| Expand region horizontally              |
+| `s.re.right` or `srr` | `(OPT) -space`| Shrink region horizontally              |
+| `s.re.up` or `sru`    | `(OPT) +space`| Expand region vertically                |
+| ``s.re.down` or `srd` | `(OPT) -space`| Shrink region vertically                |
+| `t.at`                | `(OPT) name`  | Create a new tmux session.              |
+| `t.re`                | `name`        | Detach a tmux session.                  |
+| `t.de`                |               | Detach current tmux session.            |
+| `t.rm`                | `name`        | Remove a tmux session.                  |
+| `t.rm.all`            |               | Remove all tmux session(s).             |
+| `t.ls`                |               | List all available tmux session(s).     |
+| `t.div.h`             |               | Split pane horizontally.                |
+| `t.div.v`             |               | Split pane vertically.                  |
+| `t.go.left` or `tl`   |               | Go left pane.                           |
+| `t.go.right` or `tr`  |               | Go right pane.                          |
+| `t.go.up` or `tu`     |               | Go above pane.                          |
+| `t.go.down` or `td`   |               | Go below pane.                          |
+| `tpx`                 |               | Kill current pane.                      |
+| `t.re.left` or `trl`  | `(OPT) space` | Expand current pane to left.            |
+| `t.re.right` or `trr` | `(OPT) space` | Expand current pane to right.           |
+| `t.re.up` or `tru`    | `(OPT) space` | Expand current pane to up.              |
+| `t.re.down` or `trd`  | `(OPT) space` | Expand current pane to down.            |
 
 ## Tools for Extra Functions
 
@@ -252,8 +264,7 @@ And then you can use this function.
 
 ### Terminal Multiplexer
 
-Mac has one old version of `screen` within the system, there are 5 basic
-commands available.
+Mac has a older version of `screen`, you can update by installing newer build from `homebrew`.
 
 You can insteall `tmux` through MacPorts, and the you can use a richer set of
 commands to manage your terminal.

@@ -123,6 +123,26 @@ COMMANDS=(
     s.ls
     s.at
     s.rm
+    s.rm.all
+    s.div.h
+    s.div.t
+    s.go.left
+    sl
+    s.go.right
+    sr
+    s.go.up
+    su
+    s.go.down
+    sd
+    spx
+    s.re.left
+    srl
+    s.re.right
+    srr
+    s.re.up
+    sru
+    s.re.down
+    srd
     t.at
     t.ls
     t.de
