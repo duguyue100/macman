@@ -173,7 +173,7 @@ mac shutdown
 | `s.re.left` or `srl`  | `(OPT) +space`| Expand region horizontally              |
 | `s.re.right` or `srr` | `(OPT) -space`| Shrink region horizontally              |
 | `s.re.up` or `sru`    | `(OPT) +space`| Expand region vertically                |
-| ``s.re.down` or `srd` | `(OPT) -space`| Shrink region vertically                |
+| `s.re.down` or `srd`  | `(OPT) -space`| Shrink region vertically                |
 | `t.at`                | `(OPT) name`  | Create a new tmux session.              |
 | `t.re`                | `name`        | Detach a tmux session.                  |
 | `t.de`                |               | Detach current tmux session.            |
