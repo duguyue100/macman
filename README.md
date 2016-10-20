@@ -162,7 +162,7 @@ mac shutdown
 | `s.de`                | `name`        | Detach a screen session.                |
 | `s.ls`                |               | List all available screen session(s).   |
 | `s.rm`                | `name`        | Remove a screen session.                |
-| `s.rm.all"            |               | Remove all available screen session(s). |
+| `s.rm.all`            |               | Remove all available screen session(s). |
 | `s.div.h`             |               | Split region horizontally.              |
 | `s.div.v`             |               | Split region vertically.                |
 | `s.go.left` or `sl`   |               | Go left region.                         |
