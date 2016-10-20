@@ -146,7 +146,7 @@ case "$fn" in
     ;;
 
     "t.rm.all")
-        tmux ls | grep : | cut -d. -f1 | awk '{print substr($1, 0, length($1)-1)}' | xargs kill
+        for sess in $(tmux ls | awk '{FS=":" ; print $1}' | sed 's/://g') ; do tmux kill-session -t $sess ; done
     ;;
 
     "t.div.h")
