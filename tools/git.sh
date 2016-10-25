@@ -41,7 +41,11 @@ case "$fn" in
 
     # undo commit
     "g.undo")
-        git reset --soft HEAD~
+        if [ ! -z "$firstParameter" -a "$firstParameter" != " " ]; then
+            git revert -n HEAD~$firstParameter..HEAD
+        else
+            git reset --soft HEAD~
+        fi
     ;;
 
     "g.init")
