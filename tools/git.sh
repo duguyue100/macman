@@ -201,6 +201,16 @@ case "$fn" in
         fi
     ;;
 
+    # Hold current changes, same as creating a stash
+    "g.stash")
+        git stash
+    ;;
+
+    # recover from the stash.
+    "g.unstash")
+        git stash pop
+    ;;
+
     "g.lfs.init")
         git lfs install
     ;;
