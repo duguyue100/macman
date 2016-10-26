@@ -37,7 +37,7 @@ Shutdown your machine
 mac shutdown
 ```
 
-## Available Functions - 130 and counting...
+## Available Functions - 131 and counting...
 
 ### General
 
@@ -106,6 +106,7 @@ mac shutdown
 | `g.push`         |                    | Push current branch.                                 |
 | `g.pull`         |                    | Pull current branch.                                 |
 | `g.merge`        | `branch`           | Merge a specific branch.                             |
+| `g.rebase`       |                    | Git rebase.                                          |
 | `g.th.bh`        | `branch`           | Create a new branch.                                 |
 | `g.th.re.bh`     | `remote branch`    | Clone a remote branch.                               |
 | `g.co.bh`        | `branch`           | Checkout a existing branch.                          |

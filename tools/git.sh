@@ -142,6 +142,10 @@ case "$fn" in
         fi
     ;;
 
+    "g.rebase")
+        git rebase $allParameters
+    ;;
+
     # create branch
     "g.th.bh")
         if [ ! -z "$firstParameter" -a "$firstParameter" != " " ]; then

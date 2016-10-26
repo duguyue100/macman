@@ -81,6 +81,7 @@ COMMANDS=(
     g.push
     g.pull
     g.merge
+    g.rebase
     g.th.bh
     g.th.re.bh
     g.co.bh
