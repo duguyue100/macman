@@ -88,6 +88,8 @@ COMMANDS=(
     g.ls.bh
     g.rm.bh
     g.rm.re.bh
+    g.stash
+    g.unstash
     g.lfs.init
     g.lfs.tk
     g.lfs.untk

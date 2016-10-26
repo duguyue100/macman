@@ -83,41 +83,43 @@ mac shutdown
 
 ### Git
 
-| Command          | Parameters        | Description                                           |
-| :------          | :----------       | :-------------------------------                      |
-| `g.init`         |                   | Init a Git repository locally.                        |
-| `g.clone`        | `repo link`       | Clone a project through URL.                          |
-| `g.log`          | `(OPT) file`      | Get the log for the file or the repo.                 |
-| `g.stat`         |                   | Get the status of the repo.                           |
-| `g.open` or `go` |                   | Open the Git repo from URL.                           |
-| `g.size`         |                   | Calculate the size of Git repo.                       |
-| `g.re`           | `URL`             | Add an pull/pull origin.                              |
-| `g.conf`         |                   | List the Git repo configuration.                      |
-| `g.undo`         | `(OPT) commit num`| Undo last commit(s), get commit number from `g.log`.  |
-| `g.add`          | `file`            | Stage a file.                                         |
-| `g.add.all`      |                   | Stage all the changes.                                |
-| `g.commit`       | `msg`             | Commit the changes.                                   |
-| `g.ac`           | `file` `msg`      | Stage a file and commit.                              |
-| `g.aca`          | `msg`             | Stage all changes and commit.                         |
-| `g.acp`          | `file` `msg`      | Stage file, commit and push.                          |
-| `g.acap`         | `msg`             | Stage all changes, commit and push.                   |
-| `g.mv`           | `file1` `file2`   | Move file to new destination                          |
-| `g.rm`           | `file`            | Remove file.                                          |
-| `g.push`         |                   | Push current branch.                                  |
-| `g.pull`         |                   | Pull current branch.                                  |
-| `g.merge`        | `branch`          | Merge a specific branch.                              |
-| `g.th.bh`        | `branch`          | Create a new branch.                                  |
-| `g.th.re.bh`     | `remote branch`   | Clone a remote branch.                                |
-| `g.co.bh`        | `branch`          | Checkout a existing branch.                           |
-| `g.co.re.bh`     | `remote branch`   | Checkout a remote branch.                             |
-| `g.ls.bh`        |                   | List all the branch.                                  |
-| `g.rm.bh`        | `branch`          | Remove a local branch.                                |
-| `g.rm.re.bh`     | `branch`          | Remove a branch from local and remote.                |
-| `g.lfs.init`     |                   | Initial LFS storage.                                  |
-| `g.lfs.tk`       | `file`            | LFS track files.                                      |
-| `g.lfs.untk`     | `file`            | LFS untrack files.                                    |
-| `g.lfs.ls`       |                   | List all tracked files.                               |
-| `glfs.conf`      |                   | Get the environmetn variables for the LFS.            |
+| Command          | Parameters         | Description                                          |
+| :------          | :----------        | :-------------------------------                     |
+| `g.init`         |                    | Init a Git repository locally.                       |
+| `g.clone`        | `repo link`        | Clone a project through URL.                         |
+| `g.log`          | `(OPT) file`       | Get the log for the file or the repo.                |
+| `g.stat`         |                    | Get the status of the repo.                          |
+| `g.open` or `go` |                    | Open the Git repo from URL.                          |
+| `g.size`         |                    | Calculate the size of Git repo.                      |
+| `g.re`           | `URL`              | Add an pull/pull origin.                             |
+| `g.conf`         |                    | List the Git repo configuration.                     |
+| `g.undo`         | `(OPT) commit num` | Undo last commit(s), get commit number from `g.log`. |
+| `g.add`          | `file`             | Stage a file.                                        |
+| `g.add.all`      |                    | Stage all the changes.                               |
+| `g.commit`       | `msg`              | Commit the changes.                                  |
+| `g.ac`           | `file` `msg`       | Stage a file and commit.                             |
+| `g.aca`          | `msg`              | Stage all changes and commit.                        |
+| `g.acp`          | `file` `msg`       | Stage file, commit and push.                         |
+| `g.acap`         | `msg`              | Stage all changes, commit and push.                  |
+| `g.mv`           | `file1` `file2`    | Move file to new destination.                        |
+| `g.rm`           | `file`             | Remove file.                                         |
+| `g.push`         |                    | Push current branch.                                 |
+| `g.pull`         |                    | Pull current branch.                                 |
+| `g.merge`        | `branch`           | Merge a specific branch.                             |
+| `g.th.bh`        | `branch`           | Create a new branch.                                 |
+| `g.th.re.bh`     | `remote branch`    | Clone a remote branch.                               |
+| `g.co.bh`        | `branch`           | Checkout a existing branch.                          |
+| `g.co.re.bh`     | `remote branch`    | Checkout a remote branch.                            |
+| `g.ls.bh`        |                    | List all the branch.                                 |
+| `g.rm.bh`        | `branch`           | Remove a local branch.                               |
+| `g.rm.re.bh`     | `branch`           | Remove a branch from local and remote.               |
+| `g.stash`        |                    | Make a stash, stay away from dirty work tree.        |
+| `g.unstash`      |                    | Get out from stash (EVERY CHANGES IN THERE COUNTS)   |
+| `g.lfs.init`     |                    | Initial LFS storage.                                 |
+| `g.lfs.tk`       | `file`             | LFS track files.                                     |
+| `g.lfs.untk`     | `file`             | LFS untrack files.                                   |
+| `g.lfs.ls`       |                    | List all tracked files.                              |
+| `glfs.conf`      |                    | Get the environmetn variables for the LFS.           |
 
 ### Functors
 
