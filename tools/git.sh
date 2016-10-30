@@ -124,6 +124,20 @@ case "$fn" in
         git rm $allParameters
     ;;
 
+    # wipe all history commits
+    "g.wipe")
+        git checkout --orphan latest_branch
+        git add -A
+        if [ ! -z "$firstParameter" -a "$firstParameter" != " " ]; then
+            git commit -am "$firstParameter" -q
+        else
+            git commit -am "first commit"
+        fi
+        git branch -D master
+        git branch -m master
+        git push -f origin master
+    ;;
+
     "g.push")
         curr_bh=`git rev-parse --abbrev-ref HEAD`
         git push origin ${curr_bh}
