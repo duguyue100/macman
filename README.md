@@ -37,7 +37,7 @@ Shutdown your machine
 mac shutdown
 ```
 
-## Available Functions - 132 and counting...
+## Available Functions - 133 and counting...
 
 ### General
 
@@ -104,6 +104,7 @@ mac shutdown
 | `g.mv`           | `file1` `file2`    | Move file to new destination.                        |
 | `g.rm`           | `file`             | Remove file.                                         |
 | `g.wipe`         | `(OPT) msg`        | Wipe all history and keep current stauts.            |
+| `g.clean`        | `[Y/y]`            | Clean untracked files in `.gitignore`.               |
 | `g.push`         |                    | Push current branch.                                 |
 | `g.pull`         |                    | Pull current branch.                                 |
 | `g.merge`        | `branch`           | Merge a specific branch.                             |

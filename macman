@@ -79,6 +79,7 @@ COMMANDS=(
     g.mv
     g.rm
     g.wipe
+    g.clean
     g.push
     g.pull
     g.merge

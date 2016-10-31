@@ -138,6 +138,17 @@ case "$fn" in
         git push -f origin master
     ;;
 
+    # clean all untracked files in .gitignore
+    "g.clean")
+        echo "These files are about to be removed:"
+        git clean -Xn
+        read -p "Are you sure? [Y/y]" -n 1 -r
+        echo
+        if [[ $REPLY =~ ^[Yy]$ ]]; then
+            git clean -Xdf
+        fi
+    ;;
+
     "g.push")
         curr_bh=`git rev-parse --abbrev-ref HEAD`
         git push origin ${curr_bh}
