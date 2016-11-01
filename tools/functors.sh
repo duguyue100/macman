@@ -72,6 +72,15 @@ case "$fn" in
         open https://mail.google.com/mail/#compose
     ;;
 
+    # Use Google Maps to search query
+    "maps")
+        if [ ! -z "$firstParameter" -a "$firstParameter" != " " ]; then
+            open https://maps.google.com/?q="$firstParameter"
+        else
+            echo "Please specify a search query"
+        fi
+    ;;
+
     "compute")
         bc
     ;;

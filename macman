@@ -109,6 +109,7 @@ COMMANDS=(
     say
     mail
     compose
+    maps
     compute
     define
     ol.open

@@ -37,7 +37,7 @@ Shutdown your machine
 mac shutdown
 ```
 
-## Available Functions - 133 and counting...
+## Available Functions - 134 and counting...
 
 ### General
 
@@ -139,6 +139,7 @@ mac shutdown
 | `say`               | `msg`       | Text to speech.                         |
 | `mail`              |             | Open GMail.                             |
 | `compose`           |             | Compose new email through GMail.        |
+| `maps`              | `query`     | Search a Google Maps query.             |
 | `compute`           |             | A calculator.                           |
 | `define`            | `word`      | Define word with Dictionary app.        |
 | `ol.open` or `olgo` |             | Open a Overleaf Project.                |
