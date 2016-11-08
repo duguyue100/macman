@@ -114,6 +114,7 @@ COMMANDS=(
     define
     ol.open
     olgo
+    pymake
     imshow
     ascii
     vim

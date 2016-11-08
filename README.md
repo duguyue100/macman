@@ -126,27 +126,28 @@ mac shutdown
 
 ### Functors
 
-| Command             | Parameters  | Description                             |
-| :------             | :---------- | :-------------------------------        |
-| `pdf.html`          | `file`      | Convert a PDF to HTML via `pdf2htmlEX`. |
-| `wttr`              |             | Show the weather for a city.            |
-| `top10`             |             | Show the top 10 used shell commands.    |
-| `starwar`           |             | Text based Starwar IV.                  |
-| `cal`               |             | Get 5 days agenda.                      |
-| `cal.week`          |             | Get this week's detail calendar.        |
-| `cal.mon`           |             | Get this month's detail calendar.       |
-| `cal.add`           | `xx:xx msg` | Add a quick event.                      |
-| `say`               | `msg`       | Text to speech.                         |
-| `mail`              |             | Open GMail.                             |
-| `compose`           |             | Compose new email through GMail.        |
-| `maps`              | `query`     | Search a Google Maps query.             |
-| `compute`           |             | A calculator.                           |
-| `define`            | `word`      | Define word with Dictionary app.        |
-| `ol.open` or `olgo` |             | Open a Overleaf Project.                |
-| `imshow`            | `image`     | Show image in terminal via `iTerm2`.    |
-| `cat`               |             | Show a random cat GIF via `iTerm2`.     |
-| `ascii`             |             | Print ASCII table.                      |
-| `vim`               |             | Open online VIM cheatsheet.             |
+| Command             | Parameters  | Description                                        |
+| :------             | :---------- | :-------------------------------                   |
+| `pdf.html`          | `file`      | Convert a PDF to HTML via `pdf2htmlEX`.            |
+| `wttr`              |             | Show the weather for a city.                       |
+| `top10`             |             | Show the top 10 used shell commands.               |
+| `starwar`           |             | Text based Starwar IV.                             |
+| `cal`               |             | Get 5 days agenda.                                 |
+| `cal.week`          |             | Get this week's detail calendar.                   |
+| `cal.mon`           |             | Get this month's detail calendar.                  |
+| `cal.add`           | `xx:xx msg` | Add a quick event.                                 |
+| `say`               | `msg`       | Text to speech.                                    |
+| `mail`              |             | Open GMail.                                        |
+| `compose`           |             | Compose new email through GMail.                   |
+| `maps`              | `query`     | Search a Google Maps query.                        |
+| `compute`           |             | A calculator.                                      |
+| `define`            | `word`      | Define word with Dictionary app.                   |
+| `ol.open` or `olgo` |             | Open a Overleaf Project.                           |
+| `pymake`            |             | Add one template Python Makefile in current folder |
+| `imshow`            | `image`     | Show image in terminal via `iTerm2`.               |
+| `cat`               |             | Show a random cat GIF via `iTerm2`.                |
+| `ascii`             |             | Print ASCII table.                                 |
+| `vim`               |             | Open online VIM cheatsheet.                        |
 
 ### Compressor
 

@@ -99,6 +99,11 @@ case "$fn" in
         open "${git_remote/git/www}"
     ;;
 
+    # add template Python makefiles to the directory
+    "pymake")
+        cp $MAC/res/pyMakefile $PWD/Makefile
+    ;; 
+
     "imshow")
         if [ ! -z "$firstParameter" -a "$firstParameter" != " " ]; then
             $MAC/res/imgcat $firstParameter
