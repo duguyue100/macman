@@ -37,7 +37,7 @@ Shutdown your machine
 mac shutdown
 ```
 
-## Available Functions - 134 and counting...
+## Available Functions - 135 and counting...
 
 ### General
 
