@@ -1,0 +1,59 @@
+#!/usr/bin/env python
+"""Demonstrate data from Terminal.
+
+Author: Yuhuang Hu
+Email : duguyue100@gmail.com
+"""
+
+from __future__ import print_function
+import argparse
+import os
+
+
+def data_show(input_script, verbose, output_path):
+    """Data Visualizer in Terminal.
+
+    Parameters
+    ----------
+    input_script : str
+        Path to input script, if provided, then the plotting data is
+        provided by the script, the data should be in structure as
+        a dictionary.
+    verbose : int
+        Different logging configuration.
+        0 : no log
+    output_path : str
+        The destination of the output image.
+
+    Returns
+    -------
+    """
+    if input_script != "":
+        if verbose == 1:
+            print ("[MESSAGE] The input script is saved at %s"
+                   % (input_script))
+        if not os.path.isfile(input_script):
+            raise ValueError("The input script it not found at %s"
+                             % (input_script))
+
+    if verbose == 1:
+        print ("[MESSAGE] The output image is saved at %s" % (output_path))
+
+if __name__ == "__main__":
+    PARSER = argparse.ArgumentParser(description="Data Visualizer in \
+                                        Terminal by Yuhuang Hu.")
+    PARSER.add_argument("--input-script", "-is", type=str,
+                        default="",
+                        help="Path to input script, if provided, then the \
+                                data is provided by the script. (no \
+                                plot function)")
+    PARSER.add_argument("--verbose", "-v", type=int,
+                        default=0,
+                        help="Different logging style.")
+    PARSER.add_argument("--output-path", "-o", type=str,
+                        default="/tmp/datashow_out.png",
+                        help="The destination of the output image.")
+
+    ARGUMENTS = PARSER.parse_args()
+
+    data_show(**vars(ARGUMENTS))
