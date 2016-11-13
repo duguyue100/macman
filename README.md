@@ -273,7 +273,7 @@ And then you can use this function.
 
 Mac has a older version of `screen`, you can update by installing newer build from `homebrew`.
 
-You can insteall `tmux` through MacPorts, and the you can use a richer set of
+You can install `tmux` through MacPorts, and the you can use a richer set of
 commands to manage your terminal.
 
 ## Contacts
