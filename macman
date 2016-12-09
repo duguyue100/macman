@@ -29,6 +29,8 @@ COMMANDS=(
     c
     term
     t
+    dl
+    d
     info
     lock
     restart
