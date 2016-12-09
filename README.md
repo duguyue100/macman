@@ -203,6 +203,7 @@ mac shutdown
 
 +   [ ] Code Searching via `ag`
 +   [ ] Parameters details in help script
++   [ ] Deep Learning related tricks
 
 ## Tools for Extra Functions
 
