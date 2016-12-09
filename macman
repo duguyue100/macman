@@ -176,6 +176,12 @@ COMMANDS=(
     tru
     t.re.down
     trd
+    k.doc
+    k.doc.model
+    k.doc.layers
+    k.doc.preproc
+    k.doc.train
+    k.doc.utils
 )
 
 if [ -z "$fn" ]; then
@@ -207,3 +213,4 @@ fi
 "$MAC/tools/functors.sh"
 "$MAC/tools/compressor.sh"
 "$MAC/tools/multiterm.sh"
+"$MAC/tools/dl.sh"
