@@ -120,6 +120,11 @@ case "$fn" in
         open http://vim.rtorr.com/
     ;;
 
+    # code search
+    "ag")
+        ag $allParameters
+    ;;
+
     # return a cat GIF in iTerm
     "cat")
         wget -q "http://thecatapi.com/api/images/get?format=src&type=gif" -O /tmp/cat.gif

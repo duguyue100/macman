@@ -147,6 +147,7 @@ mac shutdown
 | `imshow`            | `image`     | Show image in terminal via `iTerm2`.               |
 | `cat`               |             | Show a random cat GIF via `iTerm2`.                |
 | `ascii`             |             | Print ASCII table.                                 |
+| `ag`                | `ag opts`   | Code search with ag.                               |
 | `vim`               |             | Open online VIM cheatsheet.                        |
 
 ### Compressor

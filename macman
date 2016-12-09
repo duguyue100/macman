@@ -118,6 +118,7 @@ COMMANDS=(
     imshow
     ascii
     vim
+    ag
     cat
     lszip
     unzip

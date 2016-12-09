@@ -107,6 +107,7 @@ case "$fn" in
         echo "mac imshow     : Show image in terminal via iTerm2"
         echo "mac ascii      : Print ASCII table"
         echo "mac vim        : Open online VIM cheatsheet"
+        echo "mac ag         : Code Search"
         echo "mac cat        : Disply a random cat gif in iTerm"
         echo "--------------------------------------------------------------"
         echo "Compressor"
@@ -293,6 +294,7 @@ case "$fn" in
         echo "mac imshow     : Show image in terminal via iTerm2"
         echo "mac ascii      : Print ASCII table"
         echo "mac vim        : Open online VIM cheatsheet"
+        echo "mac ag         : Code Search"
         echo "mac cat        : Disply a random cat gif in iTerm"
         echo "--------------------------------------------------------------"
     ;;
