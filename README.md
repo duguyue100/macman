@@ -199,6 +199,11 @@ mac shutdown
 | `t.re.up` or `tru`    | `(OPT) space` | Expand current pane to up.              |
 | `t.re.down` or `trd`  | `(OPT) space` | Expand current pane to down.            |
 
+## Todo List
+
++   [ ] Code Searching via `ag`
++   [ ] Parameters details in help script
+
 ## Tools for Extra Functions
 
 ### Network speed test
