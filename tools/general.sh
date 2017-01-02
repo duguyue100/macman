@@ -28,7 +28,7 @@ case "$fn" in
     ;;
 
     "mem")
-        top -o MEM
+        htop
     ;;
 
     # if you have fast-cli package from npm

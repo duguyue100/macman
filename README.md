@@ -283,6 +283,14 @@ Mac has a older version of `screen`, you can update by installing newer build fr
 You can install `tmux` through MacPorts, and the you can use a richer set of
 commands to manage your terminal.
 
+### htop
+
+An interactive memory displayer. Can be installed by
+
+```
+brew install htop
+```
+
 ## Contacts
 
 Yuhuang Hu  
