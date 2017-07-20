@@ -134,6 +134,15 @@ case "$fn" in
 
     # start a simple HTTP server with python
     "share")
+        cp $MAC/res/share.md $PWD
+        local_ip=$(ipconfig getifaddr en0)
+        if [ $? != 0 ]; then
+            local_ip=$(ipconfig getifaddr en1)
+        fi
+        sed -i "" "s/toreplace/$local_ip/g" share.md
+        git add share.md
+        git commit -m "update share.md"
+        git push origin master
         pushd $HOME/share;
         python -m SimpleHTTPServer;
         popd
