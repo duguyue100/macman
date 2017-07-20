@@ -122,6 +122,7 @@ COMMANDS=(
     vim
     ag
     cat
+    share
     lszip
     unzip
     zip

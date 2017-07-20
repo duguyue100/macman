@@ -37,7 +37,7 @@ Shutdown your machine
 mac shutdown
 ```
 
-## Available Functions - 135 and counting...
+## Available Functions - 136 and counting...
 
 ### General
 
@@ -149,6 +149,7 @@ mac shutdown
 | `ascii`             |             | Print ASCII table.                                 |
 | `ag`                | `ag opts`   | Code search with ag.                               |
 | `vim`               |             | Open online VIM cheatsheet.                        |
+| `share`             |             | Setup a HTTP server for sharing files              |
 
 ### Compressor
 

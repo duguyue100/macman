@@ -109,6 +109,7 @@ case "$fn" in
         echo "mac vim        : Open online VIM cheatsheet"
         echo "mac ag         : Code Search"
         echo "mac cat        : Disply a random cat gif in iTerm"
+        echo "mac share      : Setup a HTTP server for sharing files"
         echo "--------------------------------------------------------------"
         echo "Compressor"
         echo "--------------------------------------------------------------"
@@ -305,6 +306,7 @@ case "$fn" in
         echo "mac vim        : Open online VIM cheatsheet"
         echo "mac ag         : Code Search"
         echo "mac cat        : Disply a random cat gif in iTerm"
+        echo "mac share      : Setup a HTTP server for sharing files"
         echo "--------------------------------------------------------------"
     ;;
 

@@ -132,4 +132,10 @@ case "$fn" in
         rm /tmp/cat.gif
     ;;
 
+    # start a simple HTTP server with python
+    "share")
+        pushd $HOME/share;
+        python -m SimpleHTTPServer;
+        popd
+
 esac
