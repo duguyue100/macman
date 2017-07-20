@@ -134,13 +134,13 @@ case "$fn" in
 
     # start a simple HTTP server with python
     "share")
-        cp $MAC/res/share.md $PWD
+        cp $MAC/res/share.md $SHARE_PATH
         local_ip=$(ipconfig getifaddr en0)
         if [ $? != 0 ]; then
             local_ip=$(ipconfig getifaddr en1)
         fi
-        sed -i "" "s/toreplace/$local_ip/g" share.md
-        git add share.md
+        sed -i "" "s/toreplace/$local_ip/g" $SHARE_PATH/share.md
+        git add $SHARE_PATH/share.md
         git commit -m "update share.md"
         git push origin master
         pushd $HOME/share;
