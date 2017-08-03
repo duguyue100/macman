@@ -123,6 +123,7 @@ COMMANDS=(
     ag
     cat
     share
+    waka
     lszip
     unzip
     zip

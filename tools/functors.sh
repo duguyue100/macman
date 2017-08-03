@@ -147,5 +147,10 @@ case "$fn" in
         pushd $HOME/share;
         python -m SimpleHTTPServer;
         popd
+    ;;
 
+    # check WAKA status
+    "waka")
+        open https://wakatime.com/dashboard 
+    ;;
 esac
