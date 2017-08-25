@@ -196,6 +196,8 @@ COMMANDS=(
     d.rm.con
     d.pull
     d.push
+    d.run.img
+    d.run
 )
 
 if [ -z "$fn" ]; then

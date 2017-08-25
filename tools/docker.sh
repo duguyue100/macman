@@ -73,4 +73,23 @@ case "$fn" in
         fi
     ;;
 
+    "d.run.img")
+        if [ ! -z "$secondParameter" -a "$secondParameter" != " " ]; then
+            docker run -it --name $secondParameter $firstParameter
+        elif [ ! -z "$firstParameter" -a "$firstParameter" != " " ]; then
+            docker run -it $firstParameter
+        else
+            echo "Please specify at least image name"
+        fi
+    ;;
+        
+
+    "d.run")
+        if [ ! -z "$firstParameter" -a "$firstParameter" != " " ]; then
+            docker run $allParameters
+        else
+            echo "Please specify run arguments."
+        fi
+    ;;
+
 esac

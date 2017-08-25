@@ -37,7 +37,7 @@ Shutdown your machine
 mac shutdown
 ```
 
-## Available Functions - 136 and counting...
+## Available Functions - 148 and counting...
 
 ### General
 
@@ -200,6 +200,23 @@ mac shutdown
 | `t.re.right` or `trr` | `(OPT) space` | Expand current pane to right.           |
 | `t.re.up` or `tru`    | `(OPT) space` | Expand current pane to up.              |
 | `t.re.down` or `trd`  | `(OPT) space` | Expand current pane to down.            |
+
+### Docker
+
+| Command               | Parameters                 | Description                                |
+| :------               | :----------                | :-------------------------------           |
+| `d.build`             | `docker args`              | Build and image from a docker file (build) |
+| `d.ls.con`            |                            | List running containers (ps)               |
+| `d.ls.all.con`        |                            | List all containers (ps -a)                |
+| `d.ls.img`            |                            | List all images (images)                   |
+| `d.start`             | `container name`           | Start a container (start)                  |
+| `d.kill`              | `container name`           | Kill a running container (kill)            |
+| `d.rm.img`            | `image name`               | Remove a docker image (rmi)                |
+| `d.rm.con`            | `container name`           | Remove a docker container (rm)             |
+| `d.pull`              | `repo address`             | Pull a docker image from remote (pull)     |
+| `d.push`              | `docker args`              | Push a docker image to remote (push)       |
+| `d.run.img`           | `img-name``container name` | Run a container from image with name (run) |
+| `d.run`               | `docker args`              | Run a container from image (run)           |
 
 ## Todo List
 
