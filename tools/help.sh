@@ -394,4 +394,21 @@ case "$fn" in
         echo "mac k.doc.utils   : Open Keras Utils documentation"
         echo "--------------------------------------------------------------"
     ;;
+
+    "docker")
+        echo "--------------------------------------------------------------"
+        echo "Docker Related"
+        echo "--------------------------------------------------------------"
+        echo "mac d.build       : Build and image from a docker file (build)"
+        echo "mac d.ls.con      : List running containers (ps)"
+        echo "mac d.ls.all.con  : List all containers (ps -a)"
+        echo "mac d.ls.img      : List all images (images)"
+        echo "mac d.start       : Start a container (start)"
+        echo "mac d.kill        : Kill a running container (kill)"
+        echo "mac d.rm.img      : Remove a docker image (rmi)"
+        echo "mac d.rm.con      : Remove a docker container (rm)"
+        echo "mac d.pull        : Pull a docker image from remote (pull)"
+        echo "mac d.push        : Push a docker image to remote (push)"
+        echo "--------------------------------------------------------------"
+    ;;
 esac

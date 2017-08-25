@@ -186,6 +186,16 @@ COMMANDS=(
     k.doc.preproc
     k.doc.train
     k.doc.utils
+    d.build
+    d.ls.con
+    d.ls.all.con
+    d.ls.img
+    d.start
+    d.kill
+    d.rm.img
+    d.rm.con
+    d.pull
+    d.push
 )
 
 if [ -z "$fn" ]; then
@@ -218,3 +228,4 @@ fi
 "$MAC/tools/compressor.sh"
 "$MAC/tools/multiterm.sh"
 "$MAC/tools/dl.sh"
+"$MAC/tools/docker.sh"
