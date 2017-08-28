@@ -153,4 +153,9 @@ case "$fn" in
     "waka")
         open https://wakatime.com/dashboard 
     ;;
+
+    # edit from macdown
+    "md")
+        macdown $allParameters
+    ;;
 esac

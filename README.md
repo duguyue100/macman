@@ -37,7 +37,7 @@ Shutdown your machine
 mac shutdown
 ```
 
-## Available Functions - 148 and counting...
+## Available Functions - 150 and counting...
 
 ### General
 
@@ -149,7 +149,9 @@ mac shutdown
 | `ascii`             |             | Print ASCII table.                                 |
 | `ag`                | `ag opts`   | Code search with ag.                               |
 | `vim`               |             | Open online VIM cheatsheet.                        |
-| `share`             |             | Setup a HTTP server for sharing files              |
+| `share`             |             | Setup a HTTP server for sharing files.             |
+| `waka`              |             | Open Waka tracker from terminal.                   |
+| `md`                | `filename`  | Edit Markdown documents with MacDown.              |
 
 ### Compressor
 
@@ -308,6 +310,11 @@ An interactive memory displayer. Can be installed by
 ```
 brew install htop
 ```
+
+### MacDown
+
+You can edit markdown with [MacDown](http://macdown.uranusjr.com/).
+After you installed it, add shell utility from preferences.
 
 ## Contacts
 

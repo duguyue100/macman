@@ -124,6 +124,7 @@ COMMANDS=(
     cat
     share
     waka
+    md
     lszip
     unzip
     zip

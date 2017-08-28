@@ -111,6 +111,7 @@ case "$fn" in
         echo "mac cat        : Disply a random cat gif in iTerm"
         echo "mac share      : Setup a HTTP server for sharing files"
         echo "mac waka       : Check WAKA!"
+        echo "mac md         : Edit documents in MacDown"
         echo "--------------------------------------------------------------"
         echo "Compressor"
         echo "--------------------------------------------------------------"
@@ -325,6 +326,7 @@ case "$fn" in
         echo "mac cat        : Disply a random cat gif in iTerm"
         echo "mac share      : Setup a HTTP server for sharing files"
         echo "mac waka       : Check WAKA!"
+        echo "mac md         : Edit documents in MacDown"
         echo "--------------------------------------------------------------"
     ;;
 
