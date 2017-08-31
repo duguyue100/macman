@@ -13,6 +13,8 @@ case "$fn" in
         echo "mac fun/f      : Get help for Functors related functions"
         echo "mac com/c      : Get help for Compressor related functions"
         echo "mac term/t     : Get help for Terminal Multiplexer related functions"
+        echo "mac dl/d       : Get help for Deep Learning tips."
+        echo "mac docker/dc  : Get help for Docker related functions."
         echo "mac info       : Get OS X version information"
         echo "mac lock       : Lock your mac"
         echo "mac restart    : Restart your mac"
@@ -212,6 +214,8 @@ case "$fn" in
         echo "mac fun/f      : Get help for Functors related functions"
         echo "mac com/c      : Get help for Compressor related functions"
         echo "mac term/t     : Get help for Terminal Multiplexer related functions"
+        echo "mac dl/d       : Get help for Deep Learning tips."
+        echo "mac docker/dc  : Get help for Docker related functions."
         echo "--------------------------------------------------------------"
     ;;
 
@@ -413,7 +417,7 @@ case "$fn" in
         echo "--------------------------------------------------------------"
     ;;
 
-    "docker")
+    "docker"|"dc")
         echo "--------------------------------------------------------------"
         echo "Docker Related"
         echo "--------------------------------------------------------------"

@@ -31,6 +31,8 @@ COMMANDS=(
     t
     dl
     d
+    docker
+    dc
     info
     lock
     restart
