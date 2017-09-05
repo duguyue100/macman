@@ -37,9 +37,9 @@ Shutdown your machine
 mac shutdown
 ```
 
-## Available Functions - 150 and counting...
+## Available Functions - 159 and counting...
 
-### General
+### General (39)
 
 | Command          | Parameters  | Description                                          |
 | :------          | :---------- | :-------------------------------                     |
@@ -50,6 +50,8 @@ mac shutdown
 | `fun` or `f`     |             | Get help for Functors related functions.             |
 | `com` or `c`     |             | Get help for Compressor related functions.           |
 | `term` or `t`    |             | Get help for Terminal Multiplexer related functions. |
+| `dl` or `d`      |             | Get help for Deep Learning tips.                     |
+| `docker` or `dc` |             | Get help for Docker related functions.               |
 | `info`           |             | Get OS X version information.                        |
 | `lock`           |             | Lock your mac.                                       |
 | `sleep`          |             | Put your Mac into sleep mode                         |
@@ -81,7 +83,7 @@ mac shutdown
 | `ejectall`       |             | Eject all mounted volumes.                           |
 | `md5`            | `file`      | Calculate MD5 for a file.                            |
 
-### Git
+### Git (38)
 
 | Command          | Parameters         | Description                                          |
 | :------          | :----------        | :-------------------------------                     |
@@ -124,7 +126,7 @@ mac shutdown
 | `g.lfs.ls`       |                    | List all tracked files.                              |
 | `glfs.conf`      |                    | Get the environmetn variables for the LFS.           |
 
-### Functors
+### Functors (24)
 
 | Command             | Parameters  | Description                                        |
 | :------             | :---------- | :-------------------------------                   |
@@ -153,7 +155,7 @@ mac shutdown
 | `waka`              |             | Open Waka tracker from terminal.                   |
 | `md`                | `filename`  | Edit Markdown documents with MacDown.              |
 
-### Compressor
+### Compressor (6)
 
 | Command | Parameters            | Description                      |
 | :------ | :----------           | :------------------------------- |
@@ -164,7 +166,7 @@ mac shutdown
 | `tar`   | `file` or `folder`    | Tar a file or folder.            |
 | `untar` | `file` `(OPT) folder` | Untar a file to a folder.        |
 
-### Terminal Multiplexer
+### Terminal Multiplexer (34)
 
 | Command               | Parameters    | Description                             |
 | :------               | :----------   | :-------------------------------        |
@@ -203,7 +205,18 @@ mac shutdown
 | `t.re.up` or `tru`    | `(OPT) space` | Expand current pane to up.              |
 | `t.re.down` or `trd`  | `(OPT) space` | Expand current pane to down.            |
 
-### Docker
+### Deep Learning Tips (6)
+
+| Command         | Parameters | Description                             |
+| :------         | :--------- | :----------                             |
+| `k.doc`         |            | Open Keras Documentation.               |
+| `k.doc.model`   |            | Open Keras Model documentation.         |
+| `k.doc.preproc` |            | Open Keras Preprocessing documentation. |
+| `k.doc.layers`  |            | Open Keras Layers documentation.        |
+| `k.doc.train`   |            | Open Keras Training documentation.      |
+| `k.doc.utils`   |            | Open Keras Utils documentation.         |
+
+### Docker (12)
 
 | Command               | Parameters                 | Description                                |
 | :------               | :----------                | :-------------------------------           |
@@ -219,12 +232,6 @@ mac shutdown
 | `d.push`              | `docker args`              | Push a docker image to remote (push)       |
 | `d.run.img`           | `img-name``container name` | Run a container from image with name (run) |
 | `d.run`               | `docker args`              | Run a container from image (run)           |
-
-## Todo List
-
-+   [ ] Code Searching via `ag`
-+   [ ] Parameters details in help script
-+   [ ] Deep Learning related tricks
 
 ## Tools for Extra Functions
 
