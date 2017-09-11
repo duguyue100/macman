@@ -141,6 +141,7 @@ case "$fn" in
         fi
         sed -i "" "s/toreplace/$local_ip/g" $SHARE_PATH/share.md
         cd $SHARE_PATH
+        git pull origin master
         git add $SHARE_PATH/share.md
         git commit -m "update share.md"
         git push origin master
