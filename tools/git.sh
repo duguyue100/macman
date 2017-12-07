@@ -16,7 +16,8 @@ case "$fn" in
     ;;
 
     "g.open"|"go")
-         open -a "Google Chrome" --args `git remote -v | awk '/fetch/{print $2}' | sed -Ee 's#(git@|git://)#http://#' -e 's@com:@com/@'`| head -n1
+         # open -a "Google Chrome" --args `git remote -v | awk '/fetch/{print $2}' | sed -Ee 's#(git@|git://)#http://#' -e 's@com:@com/@'`| head -n1
+         open `git remote -v | awk '/fetch/{print $2}' | sed -Ee 's#(git@|git://)#http://#' -e 's@com:@com/@'`| head -n1
     ;;
 
     "g.size")
