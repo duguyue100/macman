@@ -201,6 +201,7 @@ COMMANDS=(
     d.push
     d.run.img
     d.run
+    r.get
 )
 
 if [ -z "$fn" ]; then
@@ -234,3 +235,4 @@ fi
 "$MAC/tools/multiterm.sh"
 "$MAC/tools/dl.sh"
 "$MAC/tools/docker.sh"
+"$MAC/tools/ngrok.sh"
