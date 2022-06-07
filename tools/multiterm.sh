@@ -117,7 +117,7 @@ case "$fn" in
         if [ ! -z "$firstParameter" -a "$firstParameter" != " " ]; then
             tmux new -s "$firstParameter"
         else
-            tmux
+            tmux new-session \; split-window -v -p 20 \; select-pane -t 0
         fi
     ;;
 
