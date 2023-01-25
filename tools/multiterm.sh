@@ -115,7 +115,7 @@ case "$fn" in
     # attach/create a tmux session
     "t.at")
         if [ ! -z "$firstParameter" -a "$firstParameter" != " " ]; then
-            tmux new -s "$firstParameter"
+            tmux new -s "$firstParameter" \; split-window -v -p 20 \; select-pane -t 0
         else
             tmux new-session \; split-window -v -p 20 \; select-pane -t 0
         fi
