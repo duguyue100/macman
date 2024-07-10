@@ -61,7 +61,7 @@ case "$fn" in
     ;;
 
     "s.go.left" | "sl")
-        screen -S $STY -X focus left    
+        screen -S $STY -X focus left
     ;;
 
     "s.go.right" | "sr")
@@ -103,7 +103,7 @@ case "$fn" in
             screen -S $STY -X resize -v +10
         fi
     ;;
-    
+
     "s.re.down" | "srd")
         if [ ! -z "$firstParameter" -a "$firstParameter" != " " ]; then
             screen -S $STY -X resize -v $firstParameter
@@ -115,9 +115,9 @@ case "$fn" in
     # attach/create a tmux session
     "t.at")
         if [ ! -z "$firstParameter" -a "$firstParameter" != " " ]; then
-            tmux new -s "$firstParameter" \; split-window -v -p 20 \; select-pane -t 0
+            tmux new -s "$firstParameter" \; split-window -v -l 20% \; select-pane -t 0
         else
-            tmux new-session \; split-window -v -p 20 \; select-pane -t 0
+            tmux new-session \; split-window -v -l 20% \; select-pane -t 0
         fi
     ;;
 
