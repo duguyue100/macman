@@ -134,23 +134,6 @@ COMMANDS=(
     t.rm.all
     t.div.h
     t.div.v
-    t.go.left
-    tl
-    t.go.right
-    tr
-    t.go.up
-    tu
-    t.go.down
-    td
-    tpx
-    t.re.left
-    trl
-    t.re.right
-    trr
-    t.re.up
-    tru
-    t.re.down
-    trd
     d.build
     d.ls.con
     d.ls.all.con
