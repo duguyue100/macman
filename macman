@@ -183,12 +183,6 @@ COMMANDS=(
     tru
     t.re.down
     trd
-    k.doc
-    k.doc.model
-    k.doc.layers
-    k.doc.preproc
-    k.doc.train
-    k.doc.utils
     d.build
     d.ls.con
     d.ls.all.con
@@ -233,6 +227,5 @@ fi
 "$MAC/tools/functors.sh"
 "$MAC/tools/compressor.sh"
 "$MAC/tools/multiterm.sh"
-"$MAC/tools/dl.sh"
 "$MAC/tools/docker.sh"
 "$MAC/tools/ngrok.sh"

@@ -204,9 +204,9 @@ case "$fn" in
         echo "=============================================================="
     ;;
 
-    "helper"|"h") 
+    "helper"|"h")
         echo "--------------------------------------------------------------"
-        echo "Helpers" 
+        echo "Helpers"
         echo "--------------------------------------------------------------"
         echo "mac list/help  : List all the available commands"
         echo "mac gen        : Get help for General function"
@@ -401,19 +401,6 @@ case "$fn" in
         echo "    (tru)"
         echo "mac t.re.down  : Expand current pane to down."
         echo "    (trd)"
-        echo "--------------------------------------------------------------"
-    ;;
-
-    "dl"|"d")
-        echo "--------------------------------------------------------------"
-        echo "Deep Learning Tips"
-        echo "--------------------------------------------------------------"
-        echo "mac k.doc         : Open Keras Documentation"
-        echo "mac k.doc.model   : Open Keras Model documentation"
-        echo "mac k.doc.layers  : Open Keras Layers documentation"
-        echo "mac k.doc.preproc : Open Keras Preprocessing documentation"
-        echo "mac k.doc.train   : Open Keras Training documentation"
-        echo "mac k.doc.utils   : Open Keras Utils documentation"
         echo "--------------------------------------------------------------"
     ;;
 
