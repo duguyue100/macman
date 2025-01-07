@@ -4,16 +4,8 @@
 
 # convert pdf to html
 case "$fn" in
-    "pdf.html")
-        if [ ! -z "$firstParameter" -a "$firstParameter" != " " ]; then
-            pdf2htmlEX $firstParameter
-        else
-            echo "Please specify a valid PDF file"
-        fi
-    ;;
-
     # weather from command line
-    "wttr")
+    "weather")
         if [ ! -z "$firstParameter" -a "$firstParameter" != " " ]; then
             curl wttr\.in/$firstParameter
         else
@@ -21,65 +13,10 @@ case "$fn" in
         fi
     ;;
 
-    ## print top10 used commands
-    "top10")
-        echo "Top10 Used Commands"
-        HISTFILE=$HOME/.bash_history
-        set -o history
-        history | awk '{print $2}' | awk 'BEGIN {FS="|"}{print $1}' | sort | uniq -c | sort -nr | head
-    ;;
-
     "starwar")
         telnet towel.blinkenlights.nl
     ;;
 
-    # The Google Calendar functions needs gcalcli
-    "cal")
-        gcalcli agenda
-    ;;
-
-    "cal.week")
-        gcalcli calw
-    ;;
-
-    "cal.mon")
-        gcalcli calm
-    ;;
-
-    "cal.add")
-        if [ ! -z "$firstParameter" -a "$firstParameter" != " " ]; then
-            gcalcli quick "$firstParameter"
-        else
-            echo "Please specify a valid reminder entry"
-            echo "e.g. 16:42 this is a message."
-        fi
-    ;;
-
-    "say")
-        if [ ! -z "$firstParameter" -a "$firstParameter" != " " ]; then
-            say $firstParameter
-        else
-            echo "Please specify a valid string query"
-        fi
-    ;;
-
-    # Open Gmail
-    "mail")
-        open https://mail.google.com/
-    ;;
-
-    "compose")
-        open https://mail.google.com/mail/#compose
-    ;;
-
-    # Use Google Maps to search query
-    "maps")
-        if [ ! -z "$firstParameter" -a "$firstParameter" != " " ]; then
-            open https://maps.google.com/?q="$firstParameter"
-        else
-            echo "Please specify a search query"
-        fi
-    ;;
 
     "compute")
         bc
@@ -93,36 +30,12 @@ case "$fn" in
         fi
     ;;
 
-    # Open Overleaf project
-    "ol.open"|"olgo")
-        git_remote=`git config --get remote.origin.url`
-        open "${git_remote/git/www}"
-    ;;
-
-    # add template Python makefiles to the directory
-    "pymake")
-        cp $MAC/res/pyMakefile $PWD/Makefile
-    ;; 
-
-    "imshow")
-        if [ ! -z "$firstParameter" -a "$firstParameter" != " " ]; then
-            $MAC/res/imgcat $firstParameter
-        else
-            echo "Please specify the image you want to show."
-        fi
-    ;;
-
     "ascii")
         man ascii
     ;;
 
     "vim")
         open http://vim.rtorr.com/
-    ;;
-
-    # code search
-    "ag")
-        ag $allParameters
     ;;
 
     # return a cat GIF in iTerm
@@ -152,11 +65,6 @@ case "$fn" in
 
     # check WAKA status
     "waka")
-        open https://wakatime.com/dashboard 
-    ;;
-
-    # edit from macdown
-    "md")
-        macdown $allParameters
+        open https://wakatime.com/dashboard
     ;;
 esac

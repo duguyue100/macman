@@ -306,31 +306,16 @@ case "$fn" in
         echo "--------------------------------------------------------------"
         echo "Functors - extra tools"
         echo "--------------------------------------------------------------"
-        echo "mac pdf.html   : Convert a PDF to HTML via pdf2htmlEX"
         echo "mac wttr       : Show the weather for a city."
-        echo "mac top10      : Show the top10 used shell commands."
         echo "mac starwar    : Text based Starwar IV"
-        echo "mac cal        : Get 5 days agenda"
-        echo "mac cal.week   : Get this week's detail calendar"
-        echo "mac cal.mon    : Get this month's detail calendar"
-        echo "mac cal.add    : Add a quick event"
         echo "mac say        : Text to speech"
-        echo "mac mail       : Open GMail"
-        echo "mac compose    : Compose new email through GMail"
-        echo "mac maps       : Search a Google Maps query"
         echo "mac compute    : A Calculator"
         echo "mac define     : Define word with Dictionary app"
-        echo "mac ol.open    : Open a Overleaf Projecti"
-        echo "    (olgo)"
-        echo "mac pymake     : Add one template Python Makefile in current folder"
-        echo "mac imshow     : Show image in terminal via iTerm2"
         echo "mac ascii      : Print ASCII table"
         echo "mac vim        : Open online VIM cheatsheet"
-        echo "mac ag         : Code Search"
         echo "mac cat        : Disply a random cat gif in iTerm"
         echo "mac share      : Setup a HTTP server for sharing files"
         echo "mac waka       : Check WAKA!"
-        echo "mac md         : Edit documents in MacDown"
         echo "--------------------------------------------------------------"
     ;;
 
@@ -423,12 +408,4 @@ case "$fn" in
         echo "--------------------------------------------------------------"
     ;;
 
-
-    "ngrok"|"r")
-        echo "--------------------------------------------------------------"
-        echo "ngrok Related"
-        echo "--------------------------------------------------------------"
-        echo "mac r.get: Get ngrok live session public URL"
-        echo "--------------------------------------------------------------"
-    ;;
 esac
