@@ -127,7 +127,7 @@ case "$fn" in
             else
                 ssid=$1
         fi
-        security find-generic-password -D "AirPort network password" -a "$ssid" -gw
+        security find-generic-password -gw -a "$ssid"
     ;;
 
     "ejectall")
