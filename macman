@@ -228,4 +228,3 @@ fi
 "$MAC/tools/compressor.sh"
 "$MAC/tools/multiterm.sh"
 "$MAC/tools/docker.sh"
-"$MAC/tools/ngrok.sh"
