@@ -35,33 +35,15 @@ COMMANDS=(
     dc
     info
     lock
-    restart
-    sleep
-    shutdown
-    uptime
-    mem
-    speed
     ports
     ip.loc
     ip.pub
-    clock
-    battery
     fd.size
-    fd.hid
-    hid.on
-    hid.off
-    bt.stat
-    bt.on
-    bt.off
     wifi.stat
     wifi.scan
     wifi.on
     wifi.off
     wifi.pass
-    vpn.start
-    vpn.stop
-    vpn.ls
-    ejectall
     md5
     g.init
     g.clone
@@ -97,23 +79,9 @@ COMMANDS=(
     g.rm.re.bh
     g.stash
     g.unstash
-    g.lfs.init
-    g.lfs.tk
-    g.lfs.untk
-    g.lfs.ls
-    g.lfs.conf
     pdf.html
-    wttr
-    top10
+    weather
     starwar
-    cal
-    cal.week
-    cal.mon
-    cal.add
-    say
-    mail
-    compose
-    maps
     compute
     define
     ol.open
@@ -195,7 +163,6 @@ COMMANDS=(
     d.push
     d.run.img
     d.run
-    r.get
 )
 
 if [ -z "$fn" ]; then

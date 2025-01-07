@@ -157,56 +157,8 @@ case "$fn" in
         tmux split-window -v
     ;;
 
-    "t.go.left" | "tl")
-        tmux select-pane -L
-    ;;
-
-    "t.go.right" | "tr")
-        tmux select-pane -R
-    ;;
-
-    "t.go.up" | "tu")
-        tmux select-pane -U
-    ;;
-
-    "t.go.down" | "td")
-        tmux select-pane -D
-    ;;
-
     "tpx")
         tmux kill-pane
-    ;;
-
-    "t.re.left" | "trl")
-        if [ ! -z "$firstParameter" -a "$firstParameter" != " " ]; then
-            tmux resize-pane -L $firstParameter
-        else
-            tmux resize-pane -L 15
-        fi
-    ;;
-
-    "t.re.right" | "trr")
-        if [ ! -z "$firstParameter" -a "$firstParameter" != " " ]; then
-            tmux resize-pane -R $firstParameter
-        else
-            tmux resize-pane -R 15
-        fi
-    ;;
-
-    "t.re.up" | "tru")
-        if [ ! -z "$firstParameter" -a "$firstParameter" != " " ]; then
-            tmux resize-pane -U $firstParameter
-        else
-            tmux resize-pane -U 15
-        fi
-    ;;
-
-    "t.re.down" | "trd")
-        if [ ! -z "$firstParameter" -a "$firstParameter" != " " ]; then
-            tmux resize-pane -D $firstParameter
-        else
-            tmux resize-pane -D 15
-        fi
     ;;
 
 esac

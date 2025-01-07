@@ -3,7 +3,7 @@
 # Some functions related to some Git routines.
 
 case "$fn" in
-    "g.log") 
+    "g.log")
         if [ ! -z "$firstParameter" -a "$firstParameter" != " " ]; then
             git log --follow $firstParameter
         else
@@ -239,34 +239,6 @@ case "$fn" in
     # recover from the stash.
     "g.unstash")
         git stash pop
-    ;;
-
-    "g.lfs.init")
-        git lfs install
-    ;;
-
-    "g.lfs.tk")
-        if [ ! -z "$firstParameter" -a "$firstParameter" != " " ]; then
-            git lfs track "$firstParameter"
-        else
-            echo "Please specify the files you want to track"
-        fi
-    ;;
-
-    "g.lfs.untk")
-        if [ ! -z "$firstParameter" -a "$firstParameter" != " " ]; then
-            git lfs untrack "$firstParameter"
-        else
-            echo "Please specify the files you want to untrack"
-        fi
-    ;;
-
-    "g.lfs.ls")
-        git lfs ls-files
-    ;;
-
-    "g.lfs.conf")
-        git lfs env
     ;;
 
 esac
